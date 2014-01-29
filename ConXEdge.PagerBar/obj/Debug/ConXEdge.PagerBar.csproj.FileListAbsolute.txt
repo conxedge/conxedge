@@ -1,0 +1,5 @@
+E:\Source Code\michael\ConXedge\ConXEdge.PagerBar\bin\Debug\ConXEdge.PagerBar.dll
+E:\Source Code\michael\ConXedge\ConXEdge.PagerBar\bin\Debug\ConXEdge.PagerBar.pdb
+E:\Source Code\michael\ConXedge\ConXEdge.PagerBar\obj\Debug\ResolveAssemblyReference.cache
+E:\Source Code\michael\ConXedge\ConXEdge.PagerBar\obj\Debug\ConXEdge.PagerBar.dll
+E:\Source Code\michael\ConXedge\ConXEdge.PagerBar\obj\Debug\ConXEdge.PagerBar.pdb

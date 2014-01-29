@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  <class name="ConXedge.Model.PourLoggerTrack,ConXedge.Model" table="PourLoggerTrack" lazy="false">
+    <id name="Id" column="ID" type="string">
+      <generator class="assigned" />
+    </id>
+    <property type="string" not-null="true" length="50" name="Pourid" column="[Pourid]" />
+    <property type="string" not-null="true" length="50" name="Loggerid" column="[Loggerid]" />
+    <property type="int" not-null="true" name="ChannelNo" column="[ChannelNo]" />
+    <property type="Decimal" not-null="true" name="DataPointid" column="[DataPointid]" />
+    <property type="DateTime" not-null="true" name="CurrentTime" column="[CurrentTime]" />
+    <property type="Decimal" not-null="true" name="Temp" column="[Temp]" />
+    <property type="Decimal" name="EquivalentAge" column="[EquivalentAge]" />
+  </class>
+</hibernate-mapping>

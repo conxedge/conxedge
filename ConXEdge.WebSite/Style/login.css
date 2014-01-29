@@ -1,0 +1,43 @@
+﻿#login-wrapper
+{
+    left: 50%;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 500px;
+    z-index: 99;
+}
+#login-top {
+    height: 120px;
+    padding-top: 140px;
+    text-align: center;
+}
+#login-top h1 
+{
+    font-size: 100px;
+    margin-bottom: 10px
+}
+#login-content
+{
+    margin-top: 150px;
+}
+#dummy {
+    background: url("Images/bg-login-top.png") repeat scroll 0 0 #FFFFFF;
+    border-bottom: 3px solid #777973;
+    height: 388px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+#dummy2 {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border-bottom: 2px solid #545551;
+    height: 390px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}

@@ -1,0 +1,13 @@
+E:\Source Code\michael\ConXedge\ConXEdge.Nhibernate\bin\Debug\ConXEdge.Nhibernate.dll
+E:\Source Code\michael\ConXedge\ConXEdge.Nhibernate\bin\Debug\ConXEdge.Nhibernate.pdb
+E:\Source Code\michael\ConXedge\ConXEdge.Nhibernate\bin\Debug\Antlr3.Runtime.dll
+E:\Source Code\michael\ConXedge\ConXEdge.Nhibernate\bin\Debug\Iesi.Collections.dll
+E:\Source Code\michael\ConXedge\ConXEdge.Nhibernate\bin\Debug\LinFu.DynamicProxy.dll
+E:\Source Code\michael\ConXedge\ConXEdge.Nhibernate\bin\Debug\log4net.dll
+E:\Source Code\michael\ConXedge\ConXEdge.Nhibernate\bin\Debug\NHibernate.ByteCode.LinFu.dll
+E:\Source Code\michael\ConXedge\ConXEdge.Nhibernate\bin\Debug\NHibernate.dll
+E:\Source Code\michael\ConXedge\ConXEdge.Nhibernate\bin\Debug\Nullables.dll
+E:\Source Code\michael\ConXedge\ConXEdge.Nhibernate\bin\Debug\Nullables.NHibernate.dll
+E:\Source Code\michael\ConXedge\ConXEdge.Nhibernate\obj\Debug\ResolveAssemblyReference.cache
+E:\Source Code\michael\ConXedge\ConXEdge.Nhibernate\obj\Debug\ConXEdge.Nhibernate.dll
+E:\Source Code\michael\ConXedge\ConXEdge.Nhibernate\obj\Debug\ConXEdge.Nhibernate.pdb

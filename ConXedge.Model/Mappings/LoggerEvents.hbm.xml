@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  <class name="ConXedge.Model.LoggerEvents,ConXedge.Model" table="LoggerEvents" lazy="false">
+    <id name="Id" column="ID" type="string">
+      <generator class="assigned" />
+    </id>
+    <property type="Decimal" not-null="true" name="Eventid" column="[EventID]" />
+    <property type="int" not-null="true" name="Flags" column="[Flags]" />
+    <property type="DateTime" not-null="true" name="CurrentTime" column="[CurrentTime]" />
+    <property type="int" not-null="true" name="EventType" column="[EventType]" />
+    <property type="string" not-null="true" length="50" name="Loggerid" column="[LoggerID]" />
+    <property type="int" not-null="true" name="ChannelNo" column="[ChannelNo]" />
+    <property type="Decimal" not-null="true" name="EventStartid" column="[EventStartID]" />
+  </class>
+</hibernate-mapping>

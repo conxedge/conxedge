@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  <class name="ConXedge.Model.PourInfo,ConXedge.Model" table="PourInfo" lazy="false">
+    <id name="Pourid" column="PourID" type="string">
+      <generator class="assigned" />
+    </id>
+    <property type="string" not-null="true" length="50" name="Companyid" column="[CompanyID]" />
+    <property type="string" length="50" name="Projectid" column="[ProjectID]" />
+    <property type="string" not-null="true" length="50" name="PourName" column="[PourName]" />
+    <property type="DateTime" not-null="true" name="CreateDate" column="[CreateDate]" />
+    <property type="int" not-null="true" name="PourVolume" column="[PourVolume]" />
+    <property type="string" not-null="true" length="1" name="PourType" column="[PourType]" />
+    <property type="string" not-null="true" length="50" name="SetupBy" column="[SetupBy]" />
+    <property type="DateTime" not-null="true" name="Started" column="[Started]" />
+    <property type="DateTime" not-null="true" name="Finished" column="[Finished]" />
+    <property type="string" not-null="true" length="50" name="MaturityMethod" column="[MaturityMethod]" />
+    <property type="string" not-null="true" length="50" name="Productid" column="[ProductID]" />
+    <property type="string" not-null="true" length="50" name="Contactid" column="[ContactID]" />
+    <property type="string" not-null="true" length="2" name="StopType" column="[StopType]" />
+    <property type="int" not-null="true" name="Xhours" column="[XHours]" />
+    <property type="string" not-null="true" length="1" name="Status" column="[Status]" />
+  </class>
+</hibernate-mapping>

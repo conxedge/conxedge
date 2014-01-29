@@ -1,0 +1,13 @@
+E:\Source Code\michael\ConXedge\ConXedge.Model\bin\Debug\ConXedge.Model.dll
+E:\Source Code\michael\ConXedge\ConXedge.Model\bin\Debug\ConXedge.Model.pdb
+E:\Source Code\michael\ConXedge\ConXedge.Model\bin\Debug\Antlr3.Runtime.dll
+E:\Source Code\michael\ConXedge\ConXedge.Model\bin\Debug\Iesi.Collections.dll
+E:\Source Code\michael\ConXedge\ConXedge.Model\bin\Debug\LinFu.DynamicProxy.dll
+E:\Source Code\michael\ConXedge\ConXedge.Model\bin\Debug\log4net.dll
+E:\Source Code\michael\ConXedge\ConXedge.Model\bin\Debug\NHibernate.ByteCode.LinFu.dll
+E:\Source Code\michael\ConXedge\ConXedge.Model\bin\Debug\NHibernate.dll
+E:\Source Code\michael\ConXedge\ConXedge.Model\bin\Debug\Nullables.dll
+E:\Source Code\michael\ConXedge\ConXedge.Model\bin\Debug\Nullables.NHibernate.dll
+E:\Source Code\michael\ConXedge\ConXedge.Model\obj\Debug\ResolveAssemblyReference.cache
+E:\Source Code\michael\ConXedge\ConXedge.Model\obj\Debug\ConXedge.Model.dll
+E:\Source Code\michael\ConXedge\ConXedge.Model\obj\Debug\ConXedge.Model.pdb

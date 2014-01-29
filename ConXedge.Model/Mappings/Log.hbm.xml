@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  <class name="ConXedge.Model.Log,ConXedge.Model" table="Log" lazy="false">
+    <id name="Date" column="Date" type="DateTime">
+      <generator class="assigned" />
+    </id>
+    <property type="string" not-null="true" length="255" name="Thread" column="[Thread]" />
+    <property type="string" not-null="true" length="50" name="Level" column="[Level]" />
+    <property type="string" not-null="true" length="255" name="Logger" column="[Logger]" />
+    <property type="string" not-null="true" length="4000" name="Message" column="[Message]" />
+    <property type="string" not-null="true" length="2000" name="Exception" column="[Exception]" />
+  </class>
+</hibernate-mapping>

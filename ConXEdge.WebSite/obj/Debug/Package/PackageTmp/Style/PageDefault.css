@@ -1,0 +1,385 @@
+﻿/* 首页头部开始 */
+.homepagetop
+{
+	background-color:#0080FF;
+	height:108px;
+	font-weight:bold;
+}
+.divtop
+{
+    height: 68px;
+    background: url('Images/Default/top_bk.jpg'); 
+}
+.divtopMenu
+{
+    height: 40px;
+    background: url('Images/Default/TopMenu_bk.jpg');  
+}
+/* 首页头部开始 */
+/* 首页中间开始 */
+.homepagecenter
+{
+	border:0px;
+	background-color:#4397D5;
+	width:100%;
+}
+.homepagecenter tr
+{
+	height:100%;
+}
+.homepagecenter tr td
+{
+	 vertical-align:top;
+}
+.homepagecenter tr .tdleft
+{
+	height:200px;
+	width:202px;
+	text-align:center;
+	background-color:white;
+}
+.homepagecenter .tdcontent
+{
+	background-color:white;
+}
+.homepagecenter .divlefttree
+{
+	overflow: scroll;
+}
+.leftcontent
+{
+    margin-top:10px;
+    width:182px;   
+    text-align:left; 
+}
+
+/* 首页中间结束 */
+/* 首页尾部开始 */
+.homepagebottom
+{	
+	height:27px;
+	font-weight:bold;
+	line-height:27px;
+	color:White;
+	text-align:center;
+	background-color:#4397D5;
+	
+}
+/* 首页尾部开始 */
+
+/*页右上样式*/
+.menulevel1
+{
+    background-image:url('Images/Default/Menu2_bk.jpg');
+    height:26px;
+    text-align:left;
+    padding-left:35px;
+    line-height:26px;
+        font-size: 12px;
+    font-weight: bold; 
+    color: #E2583C;
+    margin-bottom:4px;
+}
+.menulevel2
+{
+    background-image:url('Images/Default/left_item_bk.jpg');
+    height:23px;
+    line-height:23px;
+    margin-left:1px;
+    text-align:left;
+    padding-left:47px;
+}
+.div_level_item
+{    
+}
+/* 超链接样式 */
+a.linkmenulevel1
+{
+    color: #000000;
+    text-decoration: none;
+}
+a.linkmenulevel1:hover
+{
+    color: #000000;
+    text-decoration: underline;
+}
+a.linkmenulevel2
+{
+    color: #000000;
+    text-decoration: none;
+}
+a.linkmenulevel2:hover
+{
+    color: #000000;
+    text-decoration: none;
+}
+/*页左样式*/
+.dl_title
+{    
+    height: 29px;
+    background-image: url('Images/Default/Menu_bk.jpg');
+    color:White;
+    font-size:14px;
+    font-weight:bold;
+    line-height:29px;
+    text-align:left;
+    padding-left:35px;
+    
+}
+.dl_bottom
+{    
+    line-height:3px;
+    height: 3px;
+    background-image: url('Images/Default/left_bottom_bk.jpg'); 
+}
+/*左边模块开始*/
+.img_title
+{ 
+    width:2px;
+    vertical-align: middle; 
+}
+.font_title
+{
+    display:inline-block;
+    line-height:26px;
+    height:26px;
+    font-size: 12px;
+    font-weight: bold; 
+    color: #E2583C;
+}
+.img_content
+{
+    vertical-align: middle; 
+    width: 2px;
+}
+.home_left_div_title
+{
+    background-image:url('Images/Default/Menu2_bk.jpg');
+    height:26px;
+    text-align:left;
+    padding-left:35px;
+}
+.home_left_div_content
+{  
+    background-color:White;
+}
+.home_left_div_content_item
+{
+    background-image:url('Images/Default/left_item_bk.jpg');
+    height:23px;
+    line-height:23px;
+    margin-left:1px;
+    text-align:left;
+    padding-left:45px;
+}
+.pageitemselect
+{
+    background-image:url('Images/Default/left_item_bk_select.jpg');  
+    background-repeat:no-repeat;
+    height:24px;
+}
+.home_left_div_content_item a
+{
+    color: #000000;
+    text-decoration: none;    
+}
+.home_left_div_content_item a:hover
+{
+    color: #000000;
+    text-decoration: none; 
+}
+
+.img_content2
+{
+    background-image:url('Images/Default/item_left_dot.gif');
+    vertical-align: middle; 
+    width: 6px;
+    height:9px;
+}
+.home_left_div_item
+{
+    height:23px;
+    line-height:23px;
+    margin-left:1px;
+    text-align:left;
+    padding-left:10px;
+}
+.pageitemselect2
+{
+    background-color:#F1F1F1;
+    background-repeat:no-repeat;
+    border:1px solid #DCE6E9;
+    height:22px;
+}
+
+
+/*左边模块结束*/
+/*右边模块开始*/
+.home_right_div_img_item_1
+{
+    float:left;
+    width:120px;
+    margin-left:1px;
+    text-align:center;
+}
+.home_right_div_img_item_2
+{    
+    float:left;
+    width:120px;
+    text-align:center;
+}
+.img_right_1
+{
+    margin-top:10px;
+    background:url('Images/Default/img_rigth_1.jpg');
+    background-repeat:no-repeat;  
+    width:57px;
+    height:67px;  
+}
+.img_right_2
+{
+    margin-top:10px;
+    background:url('Images/Default/img_right_2.jpg');
+    background-repeat:no-repeat;    
+    width:57px;
+    height:67px;  
+}
+.img_right_3
+{
+    margin-top:10px;
+    background:url('Images/Default/img_right_3.jpg');
+    background-repeat:no-repeat; 
+    width:57px;
+    height:67px;     
+}
+.img_right_4
+{
+    margin-top:10px;
+    background:url('Images/Default/img_right_4.jpg');
+    background-repeat:no-repeat;  
+    width:57px;
+    height:67px;    
+}
+.home_img_right_dot
+{
+    background-image:url('Images/Default/home_img_right_dot.gif');
+    vertical-align: middle; 
+    width:9px;
+    height:15px;
+}
+
+/* 列表样式 */
+.HomeTbList
+{
+    width: 100%;
+    line-height: 19px;
+    border-collapse: collapse;
+    border: solid 1px #BAC3CC;
+    border-top: none;
+}
+.HomeTbList th
+{
+    border: solid 1px #BAC3CC;
+    border-left: none;
+    background-color: #46D7EC;
+    color: #ffffff;
+    text-align:center;
+}
+.HomeTbList td
+{
+    font-weight:bold;
+    border: solid 1px #BAC3CC;
+    border-left: none;
+    background-color: #ffffff;
+    color: #535353;
+    text-align:center;
+}
+/*右边模块结束*/
+.divContentItem
+{
+    width:100%;   
+    margin-top:3px;  
+}
+.divContentItem_title
+{
+   height:28px;   
+   background:url('Images/Default/Item_bk.jpg');
+}
+.divContentItem_title_img
+{
+    background-image:url('Images/Default/item_left.jpg');
+    background-repeat:no-repeat;
+    width:34px;
+    height:28px;
+    margin:0px;
+}
+.divContentItem_title_right
+{
+    width:101px;
+    background-image:url('Images/Default/item_right.jpg');
+    background-repeat:no-repeat;
+    text-align:center;
+}
+.divContentItem_title_font
+{
+    width:80px;
+    display:inline-block;
+    height:28px;
+    line-height:28px;
+    color:#000000;
+    font-size:12px;
+    font-weight:bold;
+}
+a.pHomeMore
+{
+    font-weight:bold;
+    color: #3081AC;
+    text-decoration: none;
+}
+a.pHomeMore:hover
+{
+    font-weight:bold;
+    color: #3081AC;
+    text-decoration: none;
+}
+.divContentItem_content
+{
+    padding:2px;
+    border:1px solid #C0D9DD; 
+}
+.trHomeRow_bk
+{
+    height:23px;
+    background-color:#F6F6F6;
+}
+.divContentItem_content table tr 
+{
+    height:23px;      
+}
+.divContentItem_content table tr td
+{
+    height:23px;     
+}
+.divContent
+{
+    margin-left:1px;
+}
+/*右键菜单*/
+.divContextMenu
+{
+    height:48px;
+    width:70px;
+    background-color:#F0F0F0;
+    border:2px solid #C0C0C4; 
+}
+.divContextMenuUl
+{
+    margin-left:12px;
+}
+.divContextMenuLi
+{
+    height:20px;
+    line-height:20px;
+    margin-top:3px;
+    margin-bottom:3px;
+}

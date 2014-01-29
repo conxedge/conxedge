@@ -1,0 +1,5 @@
+E:\Source Code\michael\ConXedge\Resources\bin\Debug\Resources.dll
+E:\Source Code\michael\ConXedge\Resources\bin\Debug\Resources.pdb
+E:\Source Code\michael\ConXedge\Resources\obj\Debug\ResolveAssemblyReference.cache
+E:\Source Code\michael\ConXedge\Resources\obj\Debug\Resources.dll
+E:\Source Code\michael\ConXedge\Resources\obj\Debug\Resources.pdb

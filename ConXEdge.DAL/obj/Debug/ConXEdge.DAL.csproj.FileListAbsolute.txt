@@ -1,0 +1,17 @@
+E:\Source Code\michael\ConXedge\ConXEdge.DAL\bin\Debug\ConXEdge.DAL.dll
+E:\Source Code\michael\ConXedge\ConXEdge.DAL\bin\Debug\ConXEdge.DAL.pdb
+E:\Source Code\michael\ConXedge\ConXEdge.DAL\bin\Debug\Antlr3.Runtime.dll
+E:\Source Code\michael\ConXedge\ConXEdge.DAL\bin\Debug\ConXedge.Model.dll
+E:\Source Code\michael\ConXedge\ConXEdge.DAL\bin\Debug\ConXEdge.Nhibernate.dll
+E:\Source Code\michael\ConXedge\ConXEdge.DAL\bin\Debug\Iesi.Collections.dll
+E:\Source Code\michael\ConXedge\ConXEdge.DAL\bin\Debug\LinFu.DynamicProxy.dll
+E:\Source Code\michael\ConXedge\ConXEdge.DAL\bin\Debug\log4net.dll
+E:\Source Code\michael\ConXedge\ConXEdge.DAL\bin\Debug\NHibernate.ByteCode.LinFu.dll
+E:\Source Code\michael\ConXedge\ConXEdge.DAL\bin\Debug\NHibernate.dll
+E:\Source Code\michael\ConXedge\ConXEdge.DAL\bin\Debug\Nullables.dll
+E:\Source Code\michael\ConXedge\ConXEdge.DAL\bin\Debug\Nullables.NHibernate.dll
+E:\Source Code\michael\ConXedge\ConXEdge.DAL\bin\Debug\ConXedge.Model.pdb
+E:\Source Code\michael\ConXedge\ConXEdge.DAL\bin\Debug\ConXEdge.Nhibernate.pdb
+E:\Source Code\michael\ConXedge\ConXEdge.DAL\obj\Debug\ResolveAssemblyReference.cache
+E:\Source Code\michael\ConXedge\ConXEdge.DAL\obj\Debug\ConXEdge.DAL.dll
+E:\Source Code\michael\ConXedge\ConXEdge.DAL\obj\Debug\ConXEdge.DAL.pdb

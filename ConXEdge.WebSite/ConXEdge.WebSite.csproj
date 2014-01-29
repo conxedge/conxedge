@@ -1,0 +1,1110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{99A7F645-4073-46B8-8EAB-780C08817335}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ConXEdge.WebSite</RootNamespace>
+    <AssemblyName>ConXEdge.WebSite</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Antlr3.Runtime">
+      <HintPath>..\Resources\NHibernate\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Hzjg.Common">
+      <HintPath>..\Resources\DLL\Hzjg.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Iesi.Collections">
+      <HintPath>..\Resources\NHibernate\Iesi.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="LinFu.DynamicProxy">
+      <HintPath>..\Resources\NHibernate\LinFu.DynamicProxy.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate">
+      <HintPath>..\Resources\NHibernate\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate.ByteCode.LinFu">
+      <HintPath>..\Resources\NHibernate\NHibernate.ByteCode.LinFu.dll</HintPath>
+    </Reference>
+    <Reference Include="Nullables">
+      <HintPath>..\Resources\NHibernate\Nullables.dll</HintPath>
+    </Reference>
+    <Reference Include="Nullables.NHibernate">
+      <HintPath>..\Resources\NHibernate\Nullables.NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http">
+      <HintPath>..\Resources\Net\System.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting">
+      <HintPath>..\Resources\Net\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+      <HintPath>..\Resources\Net\System.Net.Http.WebRequest.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Themes\Default\default.css" />
+    <Content Include="App_Themes\Default\images\add.jpg" />
+    <Content Include="App_Themes\Default\images\Button\add.jpg" />
+    <Content Include="App_Themes\Default\images\Button\addfile.jpg" />
+    <Content Include="App_Themes\Default\images\Button\addfile_H.jpg" />
+    <Content Include="App_Themes\Default\images\Button\add_H.jpg" />
+    <Content Include="App_Themes\Default\images\Button\btnClose.jpg" />
+    <Content Include="App_Themes\Default\images\Button\btnSave.jpg" />
+    <Content Include="App_Themes\Default\images\Button\btnSaveContinue.jpg" />
+    <Content Include="App_Themes\Default\images\Button\delete.jpg" />
+    <Content Include="App_Themes\Default\images\Button\delete_H.jpg" />
+    <Content Include="App_Themes\Default\images\Button\hd.png" />
+    <Content Include="App_Themes\Default\images\Button\to_down.jpg" />
+    <Content Include="App_Themes\Default\images\Button\to_down_H.jpg" />
+    <Content Include="App_Themes\Default\images\Button\to_left.jpg" />
+    <Content Include="App_Themes\Default\images\Button\to_left_H.jpg" />
+    <Content Include="App_Themes\Default\images\Button\to_right.jpg" />
+    <Content Include="App_Themes\Default\images\Button\to_right_H.jpg" />
+    <Content Include="App_Themes\Default\images\Button\to_up.jpg" />
+    <Content Include="App_Themes\Default\images\Button\to_up_H.jpg" />
+    <Content Include="App_Themes\Default\images\Button\update.jpg" />
+    <Content Include="App_Themes\Default\images\Button\update_H.jpg" />
+    <Content Include="App_Themes\Default\images\button_plain_hover.png" />
+    <Content Include="App_Themes\Default\images\cancel.png" />
+    <Content Include="App_Themes\Default\images\main_55.gif" />
+    <Content Include="App_Themes\Default\images\main_55_1.gif" />
+    <Content Include="App_Themes\Default\images\nav.gif" />
+    <Content Include="App_Themes\Default\images\ok.png" />
+    <Content Include="App_Themes\Default\images\ui-bg_glass_85_dfeffc_1x400.png" />
+    <Content Include="App_Themes\Default\LeftMenu\LeftMenu.css" />
+    <Content Include="App_Themes\Default\menu.css" />
+    <Content Include="App_Themes\Default\PageNavigation.css" />
+    <Content Include="App_Themes\Default\Table\images\btn118.jpg" />
+    <Content Include="App_Themes\Default\Table\images\btn42.jpg" />
+    <Content Include="App_Themes\Default\Table\images\btn58.jpg" />
+    <Content Include="App_Themes\Default\Table\images\btn78.jpg" />
+    <Content Include="App_Themes\Default\Table\images\btn98.jpg" />
+    <Content Include="App_Themes\Default\Table\images\cx_bj.jpg" />
+    <Content Include="App_Themes\Default\Table\images\cx_bnt.jpg" />
+    <Content Include="App_Themes\Default\Table\images\jbxx_bj.jpg" />
+    <Content Include="App_Themes\Default\Table\images\sj_title_pp.jpg" />
+    <Content Include="App_Themes\Default\Table\images\title_bk.jpg" />
+    <Content Include="App_Themes\Default\Table\images\title_pp.jpg" />
+    <Content Include="App_Themes\Default\Table\images\xzzrr_img_bj.jpg" />
+    <Content Include="App_Themes\Default\Table\images\xz_bj.jpg" />
+    <Content Include="App_Themes\Default\Table\Table.css" />
+    <Content Include="App_Themes\Default\TopMenu\images\alterpwd.gif" />
+    <Content Include="App_Themes\Default\TopMenu\images\cxtj.gif" />
+    <Content Include="App_Themes\Default\TopMenu\images\exit.gif" />
+    <Content Include="App_Themes\Default\TopMenu\images\help.gif" />
+    <Content Include="App_Themes\Default\TopMenu\images\main_48_1.gif" />
+    <Content Include="App_Themes\Default\TopMenu\images\sy.gif" />
+    <Content Include="App_Themes\Default\TopMenu\images\v1-.1.jpg" />
+    <Content Include="App_Themes\Default\TopMenu\images\v1.1.jpg" />
+    <Content Include="App_Themes\Default\TopMenu\images\v1.2.jpg" />
+    <Content Include="App_Themes\Default\TopMenu\images\v1.3.jpg" />
+    <Content Include="App_Themes\Default\TopMenu\images\xteh.gif" />
+    <Content Include="App_Themes\Default\TopMenu\images\xxbs.gif" />
+    <Content Include="App_Themes\Default\TopMenu\images\xxfb.gif" />
+    <Content Include="App_Themes\Default\TopMenu\images\xxhb.gif" />
+    <Content Include="App_Themes\Default\TopMenu\images\xxsh.gif" />
+    <Content Include="App_Themes\Default\TopMenu\TopMenu.css" />
+    <Content Include="App_Themes\Default\tree.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="JavaScript\Common.js" />
+    <Content Include="JavaScript\Common\CodeURI.js" />
+    <Content Include="JavaScript\Common\NewCommon.js" />
+    <Content Include="JavaScript\css.css" />
+    <Content Include="JavaScript\jquery-1.7.1.min.js" />
+    <Content Include="JavaScript\jquery-1.8.2.min.js" />
+    <Content Include="JavaScript\jquery-easyui-1.2.2\easyloader.js" />
+    <Content Include="JavaScript\jquery-easyui-1.2.2\jquery.easyui.min.js" />
+    <Content Include="JavaScript\jquery-easyui-1.2.2\locale\easyui-lang-en.js" />
+    <Content Include="JavaScript\jquery-easyui-1.2.2\locale\easyui-lang-zh_CN.js" />
+    <Content Include="JavaScript\jquery-easyui-1.2.2\plugins\jquery.accordion.js" />
+    <Content Include="JavaScript\jquery-easyui-1.2.2\plugins\jquery.calendar.js" />
+    <Content Include="JavaScript\jquery-easyui-1.2.2\plugins\jquery.combo.js" />
+    <Content Include="JavaScript\jquery-easyui-1.2.2\plugins\jquery.combobox.js" />
+    <Content Include="JavaScript\jquery-easyui-1.2.2\plugins\jquery.combogrid.js" />
+    <Content Include="JavaScript\jquery-easyui-1.2.2\plugins\jquery.combotree.js" />
+    <Content Include="JavaScript\jquery-easyui-1.2.2\plugins\jquery.datagrid.js" />
+    <Content Include="JavaScript\jquery-easyui-1.2.2\plugins\jquery.datebox.js" />
+    <Content Include="JavaScript\jquery-easyui-1.2.2\plugins\jquery.datetimebox.js" />
+    <Content Include="JavaScript\jquery-easyui-1.2.2\plugins\jquery.dialog.js" />
+    <Content Include="JavaScript\jquery-easyui-1.2.2\plugins\jquery.draggable.js" />
+    <Content Include="JavaScript\jquery-easyui-1.2.2\plugins\jquery.droppable.js" />
+    <Content Include="JavaScript\jquery-easyui-1.2.2\plugins\jquery.form.js" />
+    <Content Include="JavaScript\jquery-easyui-1.2.2\plugins\jquery.layout.js" />
+    <Content Include="JavaScript\jquery-easyui-1.2.2\plugins\jquery.linkbutton.js" />
+    <Content Include="JavaScript\jquery-easyui-1.2.2\plugins\jquery.menu.js" />
+    <Content Include="JavaScript\jquery-easyui-1.2.2\plugins\jquery.menubutton.js" />
+    <Content Include="JavaScript\jquery-easyui-1.2.2\plugins\jquery.messager.js" />
+    <Content Include="JavaScript\jquery-easyui-1.2.2\plugins\jquery.numberbox.js" />
+    <Content Include="JavaScript\jquery-easyui-1.2.2\plugins\jquery.numberspinner.js" />
+    <Content Include="JavaScript\jquery-easyui-1.2.2\plugins\jquery.pagination.js" />
+    <Content Include="JavaScript\jquery-easyui-1.2.2\plugins\jquery.panel.js" />
+    <Content Include="JavaScript\jquery-easyui-1.2.2\plugins\jquery.parser.js" />
+    <Content Include="JavaScript\jquery-easyui-1.2.2\plugins\jquery.resizable.js" />
+    <Content Include="JavaScript\jquery-easyui-1.2.2\plugins\jquery.spinner.js" />
+    <Content Include="JavaScript\jquery-easyui-1.2.2\plugins\jquery.splitbutton.js" />
+    <Content Include="JavaScript\jquery-easyui-1.2.2\plugins\jquery.tabs.js" />
+    <Content Include="JavaScript\jquery-easyui-1.2.2\plugins\jquery.timespinner.js" />
+    <Content Include="JavaScript\jquery-easyui-1.2.2\plugins\jquery.tree.js" />
+    <Content Include="JavaScript\jquery-easyui-1.2.2\plugins\jquery.treegrid.js" />
+    <Content Include="JavaScript\jquery-easyui-1.2.2\plugins\jquery.validatebox.js" />
+    <Content Include="JavaScript\jquery-easyui-1.2.2\plugins\jquery.window.js" />
+    <Content Include="JavaScript\jquery-easyui-1.2.2\themes\default\accordion.css" />
+    <Content Include="JavaScript\jquery-easyui-1.2.2\themes\default\calendar.css" />
+    <Content Include="JavaScript\jquery-easyui-1.2.2\themes\default\combo.css" />
+    <Content Include="JavaScript\jquery-easyui-1.2.2\themes\default\combobox.css" />
+    <Content Include="JavaScript\jquery-easyui-1.2.2\themes\default\datagrid.css" />
+    <Content Include="JavaScript\jquery-easyui-1.2.2\themes\default\datebox.css" />
+    <Content Include="JavaScript\jquery-easyui-1.2.2\themes\default\dialog.css" />
+    <Content Include="JavaScript\jquery-easyui-1.2.2\themes\default\easyui.css" />
+    <Content Include="JavaScript\jquery-easyui-1.2.2\themes\default\images\accordion_collapse.png" />
+    <Content Include="JavaScript\jquery-easyui-1.2.2\themes\default\images\accordion_expand.png" />
+    <Content Include="JavaScript\jquery-easyui-1.2.2\themes\default\images\button_a_bg.gif" />
+    <Content Include="JavaScript\jquery-easyui-1.2.2\themes\default\images\button_plain_hover.png" />
+    <Content Include="JavaScript\jquery-easyui-1.2.2\themes\default\images\button_span_bg.gif" />
+    <Content Include="JavaScript\jquery-easyui-1.2.2\themes\default\images\calendar_nextmonth.gif" />
+    <Content Include="JavaScript\jquery-easyui-1.2.2\themes\default\images\calendar_nextyear.gif" />
+    <Content Include="JavaScript\jquery-easyui-1.2.2\themes\default\images\calendar_prevmonth.gif" />
+    <Content Include="JavaScript\jquery-easyui-1.2.2\themes\default\images\calendar_prevyear.gif" />
+    <Content Include="JavaScript\jquery-easyui-1.2.2\themes\default\images\combo_arrow.gif" />
+    <Content Include="JavaScript\jquery-easyui-1.2.2\themes\default\images\datagrid_header_bg.gif" />
+    <Content Include="JavaScript\jquery-easyui-1.2.2\themes\default\images\datagrid_row_collapse.gif" />
+    <Content Include="JavaScript\jquery-easyui-1.2.2\themes\default\images\datagrid_row_expand.gif" />
+    <Content Include="JavaScript\jquery-easyui-1.2.2\themes\default\images\datagrid_sort_asc.gif" />
+    <Content Include="JavaScript\jquery-easyui-1.2.2\themes\default\images\datagrid_sort_desc.gif" />
+    <Content Include="JavaScript\jquery-easyui-1.2.2\themes\default\images\datagrid_title_bg.png" />
+    <Content Include="JavaScript\jquery-easyui-1.2.2\themes\default\images\datebox_arrow.png" />
+    <Content Include="JavaScript\jquery-easyui-1.2.2\themes\default\images\layout_button_down.gif" />
+    <Content Include="JavaScript\jquery-easyui-1.2.2\themes\default\images\layout_button_left.gif" />
+    <Content Include="JavaScript\jquery-easyui-1.2.2\themes\default\images\layout_button_right.gif" />
+    <Content Include="JavaScript\jquery-easyui-1.2.2\themes\default\images\layout_button_up.gif" />
+    <Content Include="JavaScript\jquery-easyui-1.2.2\themes\default\images\menu.gif" />
+    <Content Include="JavaScript\jquery-easyui-1.2.2\themes\default\images\menu_downarrow.png" />
+    <Content Include="JavaScript\jquery-easyui-1.2.2\themes\default\images\menu_rightarrow.png" />
+    <Content Include="JavaScript\jquery-easyui-1.2.2\themes\default\images\menu_sep.png" />
+    <Content Include="JavaScript\jquery-easyui-1.2.2\themes\default\images\menu_split_downarrow.png" />
+    <Content Include="JavaScript\jquery-easyui-1.2.2\themes\default\images\messager_error.gif" />
+    <Content Include="JavaScript\jquery-easyui-1.2.2\themes\default\images\messager_info.gif" />
+    <Content Include="JavaScript\jquery-easyui-1.2.2\themes\default\images\messager_question.gif" />
+    <Content Include="JavaScript\jquery-easyui-1.2.2\themes\default\images\messager_warning.gif" />
+    <Content Include="JavaScript\jquery-easyui-1.2.2\themes\default\images\pagination_first.gif" />
+    <Content Include="JavaScript\jquery-easyui-1.2.2\themes\default\images\pagination_last.gif" />
+    <Content Include="JavaScript\jquery-easyui-1.2.2\themes\default\images\pagination_load.png" />
+    <Content Include="JavaScript\jquery-easyui-1.2.2\themes\default\images\pagination_loading.gif" />
+    <Content Include="JavaScript\jquery-easyui-1.2.2\themes\default\images\pagination_next.gif" />
+    <Content Include="JavaScript\jquery-easyui-1.2.2\themes\default\images\pagination_prev.gif" />
+    <Content Include="JavaScript\jquery-easyui-1.2.2\themes\default\images\panel_loading.gif" />
+    <Content Include="JavaScript\jquery-easyui-1.2.2\themes\default\images\panel_title.png" />
+    <Content Include="JavaScript\jquery-easyui-1.2.2\themes\default\images\panel_tools.gif" />
+    <Content Include="JavaScript\jquery-easyui-1.2.2\themes\default\images\panel_tool_collapse.gif" />
+    <Content Include="JavaScript\jquery-easyui-1.2.2\themes\default\images\panel_tool_expand.gif" />
+    <Content Include="JavaScript\jquery-easyui-1.2.2\themes\default\images\spinner_arrow_down.gif" />
+    <Content Include="JavaScript\jquery-easyui-1.2.2\themes\default\images\spinner_arrow_up.gif" />
+    <Content Include="JavaScript\jquery-easyui-1.2.2\themes\default\images\tabs_active.png" />
+    <Content Include="JavaScript\jquery-easyui-1.2.2\themes\default\images\tabs_close.gif" />
+    <Content Include="JavaScript\jquery-easyui-1.2.2\themes\default\images\tabs_enabled.png" />
+    <Content Include="JavaScript\jquery-easyui-1.2.2\themes\default\images\tabs_leftarrow.png" />
+    <Content Include="JavaScript\jquery-easyui-1.2.2\themes\default\images\tabs_rightarrow.png" />
+    <Content Include="JavaScript\jquery-easyui-1.2.2\themes\default\images\tree_arrows.gif" />
+    <Content Include="JavaScript\jquery-easyui-1.2.2\themes\default\images\tree_checkbox_0.gif" />
+    <Content Include="JavaScript\jquery-easyui-1.2.2\themes\default\images\tree_checkbox_1.gif" />
+    <Content Include="JavaScript\jquery-easyui-1.2.2\themes\default\images\tree_checkbox_2.gif" />
+    <Content Include="JavaScript\jquery-easyui-1.2.2\themes\default\images\tree_dnd_no.png" />
+    <Content Include="JavaScript\jquery-easyui-1.2.2\themes\default\images\tree_dnd_yes.png" />
+    <Content Include="JavaScript\jquery-easyui-1.2.2\themes\default\images\tree_file.gif" />
+    <Content Include="JavaScript\jquery-easyui-1.2.2\themes\default\images\tree_folder.gif" />
+    <Content Include="JavaScript\jquery-easyui-1.2.2\themes\default\images\tree_folder_open.gif" />
+    <Content Include="JavaScript\jquery-easyui-1.2.2\themes\default\images\tree_loading.gif" />
+    <Content Include="JavaScript\jquery-easyui-1.2.2\themes\default\images\validatebox_pointer.gif" />
+    <Content Include="JavaScript\jquery-easyui-1.2.2\themes\default\images\validatebox_warning.png" />
+    <Content Include="JavaScript\jquery-easyui-1.2.2\themes\default\layout.css" />
+    <Content Include="JavaScript\jquery-easyui-1.2.2\themes\default\linkbutton.css" />
+    <Content Include="JavaScript\jquery-easyui-1.2.2\themes\default\menu.css" />
+    <Content Include="JavaScript\jquery-easyui-1.2.2\themes\default\menubutton.css" />
+    <Content Include="JavaScript\jquery-easyui-1.2.2\themes\default\messager.css" />
+    <Content Include="JavaScript\jquery-easyui-1.2.2\themes\default\pagination.css" />
+    <Content Include="JavaScript\jquery-easyui-1.2.2\themes\default\panel.css" />
+    <Content Include="JavaScript\jquery-easyui-1.2.2\themes\default\spinner.css" />
+    <Content Include="JavaScript\jquery-easyui-1.2.2\themes\default\splitbutton.css" />
+    <Content Include="JavaScript\jquery-easyui-1.2.2\themes\default\tabs.css" />
+    <Content Include="JavaScript\jquery-easyui-1.2.2\themes\default\tree.css" />
+    <Content Include="JavaScript\jquery-easyui-1.2.2\themes\default\validatebox.css" />
+    <Content Include="JavaScript\jquery-easyui-1.2.2\themes\default\window.css" />
+    <Content Include="JavaScript\jquery-easyui-1.2.2\themes\icon.css" />
+    <Content Include="JavaScript\jquery-easyui-1.2.2\themes\icons\back.png" />
+    <Content Include="JavaScript\jquery-easyui-1.2.2\themes\icons\cancel.png" />
+    <Content Include="JavaScript\jquery-easyui-1.2.2\themes\icons\cut.png" />
+    <Content Include="JavaScript\jquery-easyui-1.2.2\themes\icons\edit_add.png" />
+    <Content Include="JavaScript\jquery-easyui-1.2.2\themes\icons\edit_remove.png" />
+    <Content Include="JavaScript\jquery-easyui-1.2.2\themes\icons\filesave.png" />
+    <Content Include="JavaScript\jquery-easyui-1.2.2\themes\icons\help.png" />
+    <Content Include="JavaScript\jquery-easyui-1.2.2\themes\icons\li.png" />
+    <Content Include="JavaScript\jquery-easyui-1.2.2\themes\icons\no.png" />
+    <Content Include="JavaScript\jquery-easyui-1.2.2\themes\icons\ok.png" />
+    <Content Include="JavaScript\jquery-easyui-1.2.2\themes\icons\pencil.png" />
+    <Content Include="JavaScript\jquery-easyui-1.2.2\themes\icons\print.png" />
+    <Content Include="JavaScript\jquery-easyui-1.2.2\themes\icons\redo.png" />
+    <Content Include="JavaScript\jquery-easyui-1.2.2\themes\icons\reload.png" />
+    <Content Include="JavaScript\jquery-easyui-1.2.2\themes\icons\search.png" />
+    <Content Include="JavaScript\jquery-easyui-1.2.2\themes\icons\undo.png" />
+    <Content Include="JavaScript\Jquery-RightMenu.js" />
+    <Content Include="JavaScript\jquery-ui-1.8.17\css\redmond\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="JavaScript\jquery-ui-1.8.17\css\redmond\images\ui-bg_flat_55_fbec88_40x100.png" />
+    <Content Include="JavaScript\jquery-ui-1.8.17\css\redmond\images\ui-bg_glass_75_d0e5f5_1x400.png" />
+    <Content Include="JavaScript\jquery-ui-1.8.17\css\redmond\images\ui-bg_glass_85_dfeffc_1x400.png" />
+    <Content Include="JavaScript\jquery-ui-1.8.17\css\redmond\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="JavaScript\jquery-ui-1.8.17\css\redmond\images\ui-bg_gloss-wave_55_5c9ccc_500x100.png" />
+    <Content Include="JavaScript\jquery-ui-1.8.17\css\redmond\images\ui-bg_inset-hard_100_f5f8f9_1x100.png" />
+    <Content Include="JavaScript\jquery-ui-1.8.17\css\redmond\images\ui-bg_inset-hard_100_fcfdfd_1x100.png" />
+    <Content Include="JavaScript\jquery-ui-1.8.17\css\redmond\images\ui-icons_217bc0_256x240.png" />
+    <Content Include="JavaScript\jquery-ui-1.8.17\css\redmond\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="JavaScript\jquery-ui-1.8.17\css\redmond\images\ui-icons_469bdd_256x240.png" />
+    <Content Include="JavaScript\jquery-ui-1.8.17\css\redmond\images\ui-icons_6da8d5_256x240.png" />
+    <Content Include="JavaScript\jquery-ui-1.8.17\css\redmond\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="JavaScript\jquery-ui-1.8.17\css\redmond\images\ui-icons_d8e7f3_256x240.png" />
+    <Content Include="JavaScript\jquery-ui-1.8.17\css\redmond\images\ui-icons_f9bd01_256x240.png" />
+    <Content Include="JavaScript\jquery-ui-1.8.17\css\redmond\jquery-ui-1.8.17.custom.css" />
+    <Content Include="JavaScript\jquery-ui-1.8.17\css\smoothness\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="JavaScript\jquery-ui-1.8.17\css\smoothness\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="JavaScript\jquery-ui-1.8.17\css\smoothness\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="JavaScript\jquery-ui-1.8.17\css\smoothness\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="JavaScript\jquery-ui-1.8.17\css\smoothness\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="JavaScript\jquery-ui-1.8.17\css\smoothness\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="JavaScript\jquery-ui-1.8.17\css\smoothness\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="JavaScript\jquery-ui-1.8.17\css\smoothness\images\ui-bg_highlight-soft_75_cccccc_1x100 - 副本.png" />
+    <Content Include="JavaScript\jquery-ui-1.8.17\css\smoothness\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="JavaScript\jquery-ui-1.8.17\css\smoothness\images\ui-icons_222222_256x240.png" />
+    <Content Include="JavaScript\jquery-ui-1.8.17\css\smoothness\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="JavaScript\jquery-ui-1.8.17\css\smoothness\images\ui-icons_454545_256x240.png" />
+    <Content Include="JavaScript\jquery-ui-1.8.17\css\smoothness\images\ui-icons_888888_256x240.png" />
+    <Content Include="JavaScript\jquery-ui-1.8.17\css\smoothness\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="JavaScript\jquery-ui-1.8.17\css\smoothness\jquery-ui-1.8.17.custom.css" />
+    <Content Include="JavaScript\jquery-ui-1.8.17\jquery-ui-1.8.17.custom.min.js" />
+    <Content Include="JavaScript\jquery_dialog.js" />
+    <Content Include="JavaScript\JScript1.js" />
+    <Content Include="JavaScript\json2.js" />
+    <Content Include="JavaScript\Highstock-1.3.7\adapters\mootools-adapter.js" />
+    <Content Include="JavaScript\Highstock-1.3.7\adapters\mootools-adapter.src.js" />
+    <Content Include="JavaScript\Highstock-1.3.7\adapters\prototype-adapter.js" />
+    <Content Include="JavaScript\Highstock-1.3.7\adapters\prototype-adapter.src.js" />
+    <Content Include="JavaScript\Highstock-1.3.7\adapters\standalone-framework.js" />
+    <Content Include="JavaScript\Highstock-1.3.7\adapters\standalone-framework.src.js" />
+    <Content Include="JavaScript\Highstock-1.3.7\highcharts-more.js" />
+    <Content Include="JavaScript\Highstock-1.3.7\highcharts-more.src.js" />
+    <Content Include="JavaScript\Highstock-1.3.7\highstock.js" />
+    <Content Include="JavaScript\Highstock-1.3.7\highstock.src.js" />
+    <Content Include="JavaScript\Highstock-1.3.7\modules\annotations.js" />
+    <Content Include="JavaScript\Highstock-1.3.7\modules\annotations.src.js" />
+    <Content Include="JavaScript\Highstock-1.3.7\modules\canvas-tools.js" />
+    <Content Include="JavaScript\Highstock-1.3.7\modules\canvas-tools.src.js" />
+    <Content Include="JavaScript\Highstock-1.3.7\modules\data.js" />
+    <Content Include="JavaScript\Highstock-1.3.7\modules\data.src.js" />
+    <Content Include="JavaScript\Highstock-1.3.7\modules\drilldown.js" />
+    <Content Include="JavaScript\Highstock-1.3.7\modules\drilldown.src.js" />
+    <Content Include="JavaScript\Highstock-1.3.7\modules\exporting.js" />
+    <Content Include="JavaScript\Highstock-1.3.7\modules\exporting.src.js" />
+    <Content Include="JavaScript\Highstock-1.3.7\modules\funnel.js" />
+    <Content Include="JavaScript\Highstock-1.3.7\modules\funnel.src.js" />
+    <Content Include="JavaScript\Highstock-1.3.7\modules\heatmap.js" />
+    <Content Include="JavaScript\Highstock-1.3.7\modules\heatmap.src.js" />
+    <Content Include="JavaScript\Highstock-1.3.7\modules\map.js" />
+    <Content Include="JavaScript\Highstock-1.3.7\modules\map.src.js" />
+    <Content Include="JavaScript\Highstock-1.3.7\modules\no-data-to-display.js" />
+    <Content Include="JavaScript\Highstock-1.3.7\modules\no-data-to-display.src.js" />
+    <Content Include="JavaScript\Highstock-1.3.7\themes\dark-blue.js" />
+    <Content Include="JavaScript\Highstock-1.3.7\themes\dark-green.js" />
+    <Content Include="JavaScript\Highstock-1.3.7\themes\gray.js" />
+    <Content Include="JavaScript\Highstock-1.3.7\themes\grid.js" />
+    <Content Include="JavaScript\Highstock-1.3.7\themes\skies.js" />
+    <Content Include="JavaScript\My97DatePicker\calendar.js" />
+    <Content Include="JavaScript\My97DatePicker\config.js" />
+    <Content Include="JavaScript\My97DatePicker\lang\en.js" />
+    <Content Include="JavaScript\My97DatePicker\lang\zh-cn.js" />
+    <Content Include="JavaScript\My97DatePicker\lang\zh-tw.js" />
+    <Content Include="JavaScript\My97DatePicker\My97DatePicker.htm" />
+    <Content Include="JavaScript\My97DatePicker\skin\datePicker.gif" />
+    <Content Include="JavaScript\My97DatePicker\skin\default\datepicker.css" />
+    <Content Include="JavaScript\My97DatePicker\skin\default\img.gif" />
+    <Content Include="JavaScript\My97DatePicker\skin\WdatePicker.css" />
+    <Content Include="JavaScript\My97DatePicker\skin\whyGreen\bg.jpg" />
+    <Content Include="JavaScript\My97DatePicker\skin\whyGreen\datepicker.css" />
+    <Content Include="JavaScript\My97DatePicker\skin\whyGreen\img.gif" />
+    <Content Include="JavaScript\My97DatePicker\WdatePicker.js" />
+    <Content Include="JavaScript\My97DatePicker\开发包\lang\en.js" />
+    <Content Include="JavaScript\My97DatePicker\开发包\lang\zh-cn.js" />
+    <Content Include="JavaScript\My97DatePicker\开发包\lang\zh-tw.js" />
+    <Content Include="JavaScript\My97DatePicker\开发包\readme.txt" />
+    <Content Include="JavaScript\My97DatePicker\开发包\skin\datePicker.gif" />
+    <Content Include="JavaScript\My97DatePicker\开发包\skin\default\datepicker.css" />
+    <Content Include="JavaScript\My97DatePicker\开发包\skin\default\img.gif" />
+    <Content Include="JavaScript\My97DatePicker\开发包\skin\WdatePicker.css" />
+    <Content Include="JavaScript\My97DatePicker\开发包\skin\whyGreen\bg.jpg" />
+    <Content Include="JavaScript\My97DatePicker\开发包\skin\whyGreen\datepicker.css" />
+    <Content Include="JavaScript\My97DatePicker\开发包\skin\whyGreen\img.gif" />
+    <Content Include="JavaScript\pager.js" />
+    <Content Include="JavaScript\zTree\css\demo.css" />
+    <Content Include="JavaScript\zTree\css\zTreeStyle\img\diy\1_close.png" />
+    <Content Include="JavaScript\zTree\css\zTreeStyle\img\diy\1_open.png" />
+    <Content Include="JavaScript\zTree\css\zTreeStyle\img\diy\2.png" />
+    <Content Include="JavaScript\zTree\css\zTreeStyle\img\diy\3.png" />
+    <Content Include="JavaScript\zTree\css\zTreeStyle\img\diy\4.png" />
+    <Content Include="JavaScript\zTree\css\zTreeStyle\img\diy\5.png" />
+    <Content Include="JavaScript\zTree\css\zTreeStyle\img\diy\6.png" />
+    <Content Include="JavaScript\zTree\css\zTreeStyle\img\diy\7.png" />
+    <Content Include="JavaScript\zTree\css\zTreeStyle\img\diy\8.png" />
+    <Content Include="JavaScript\zTree\css\zTreeStyle\img\diy\9.png" />
+    <Content Include="JavaScript\zTree\css\zTreeStyle\img\line_conn.gif" />
+    <Content Include="JavaScript\zTree\css\zTreeStyle\img\loading.gif" />
+    <Content Include="JavaScript\zTree\css\zTreeStyle\img\zTreeStandard.gif" />
+    <Content Include="JavaScript\zTree\css\zTreeStyle\img\zTreeStandard.png" />
+    <Content Include="JavaScript\zTree\css\zTreeStyle\zTreeStyle.css" />
+    <Content Include="JavaScript\zTree\js\jquery.ztree.all-3.2.js" />
+    <Content Include="JavaScript\zTree\js\jquery.ztree.all-3.2.min.js" />
+    <Content Include="JavaScript\zTree\js\jquery.ztree.core-3.2.js" />
+    <Content Include="JavaScript\zTree\js\jquery.ztree.core-3.2.min.js" />
+    <Content Include="JavaScript\zTree\js\jquery.ztree.excheck-3.2.js" />
+    <Content Include="JavaScript\zTree\js\jquery.ztree.excheck-3.2.min.js" />
+    <Content Include="JavaScript\zTree\js\jquery.ztree.exedit-3.2.js" />
+    <Content Include="JavaScript\zTree\js\jquery.ztree.exedit-3.2.min.js" />
+    <Content Include="Login.aspx" />
+    <Content Include="Module\HardwareControl\DashBoardList.aspx" />
+    <Content Include="Module\HardwareControl\LoggerTrackChart1.aspx" />
+    <Content Include="Module\HardwareControl\LoggerTrackDashBoard.aspx" />
+    <Content Include="Module\HardwareControl\LoggerTrackTabs.aspx">
+      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
+    </Content>
+    <Content Include="Module\HardwareControl\LoggerTrackList.aspx" />
+    <Content Include="Module\HardwareControl\OperationHandler.aspx" />
+    <Content Include="Module\HardwareControl\LoggerTrackSetup.aspx" />
+    <Content Include="Module\HardwareControl\LoggerTrackChart2.aspx" />
+    <Content Include="Module\Projects\PourEditTabs.aspx" />
+    <Content Include="Module\Projects\ProductAdd.aspx" />
+    <Content Include="Module\Projects\ProductList.aspx" />
+    <Content Include="Module\Projects\ProductEdit.aspx" />
+    <Content Include="Module\Projects\OperationHandler.aspx" />
+    <Content Include="Module\Projects\LoggerList.aspx" />
+    <Content Include="Module\Projects\LoggerAdd.aspx" />
+    <Content Include="Module\Projects\LoggerEdit.aspx" />
+    <Content Include="Module\Projects\ProjectAdd.aspx" />
+    <Content Include="Module\Projects\ProjectEdit.aspx" />
+    <Content Include="Module\Projects\ProjectList.aspx" />
+    <Content Include="Module\Projects\PourAdd.aspx" />
+    <Content Include="Module\Projects\PourList.aspx" />
+    <Content Include="Module\Projects\Project2LoggerList.aspx" />
+    <Content Include="Module\Projects\Project2LoggerAdd.aspx" />
+    <Content Include="Module\Projects\PourEdit.aspx" />
+    <Content Include="Module\Projects\ContactList.aspx" />
+    <Content Include="Module\Projects\ContactEdit.aspx" />
+    <Content Include="Module\Projects\ContactAdd.aspx" />
+    <Content Include="Module\Projects\DefaultTargetList.aspx" />
+    <Content Include="Module\Projects\DefaultTargetEdit.aspx" />
+    <Content Include="Module\Projects\DefaultTargetAdd.aspx" />
+    <Content Include="Module\Projects\LevelList.aspx" />
+    <Content Include="Module\Projects\LevelAdd.aspx" />
+    <Content Include="Module\Projects\LevelEdit.aspx" />
+    <Content Include="Module\Projects\Pour2LevelList.aspx" />
+    <Content Include="Module\Projects\Pour2LevelAdd.aspx" />
+    <Content Include="Module\Projects\Pour2TargetList.aspx" />
+    <Content Include="Module\Projects\Pour2TargetAdd.aspx" />
+    <Content Include="Module\Projects\Pour2TargetEdit.aspx" />
+    <Content Include="Module\Projects\Pour2LocationList.aspx" />
+    <Content Include="Module\Projects\Pour2LocationAdd.aspx" />
+    <Content Include="Module\Projects\Pour2LocationTargetList.aspx" />
+    <Content Include="Module\Projects\Pour2LocationTargetEdit.aspx" />
+    <Content Include="Module\Projects\Pour2LocationEdit.aspx" />
+    <Content Include="Module\Projects\LoggerTempList.aspx" />
+    <Content Include="Module\Projects\CompanyList.aspx" />
+    <Content Include="Style\bmp\beijing.bmp" />
+    <Content Include="Style\bmp\bottom.bmp" />
+    <Content Include="Style\bmp\jpkj.bmp" />
+    <Content Include="Style\bmp\jxzy.bmp" />
+    <Content Include="Style\bmp\top.bmp" />
+    <Content Include="Style\bmp\tzgg.bmp" />
+    <Content Include="Style\bmp\wlkt.bmp" />
+    <Content Include="Style\bmp\zxks.bmp" />
+    <Content Include="Style\global.css" />
+    <Content Include="Style\icon.css" />
+    <Content Include="Style\icons\back.gif" />
+    <Content Include="Style\icons\back.png" />
+    <Content Include="Style\icons\call.gif" />
+    <Content Include="Style\icons\call.png" />
+    <Content Include="Style\icons\cancel.gif" />
+    <Content Include="Style\icons\cancel.png" />
+    <Content Include="Style\icons\cut.gif" />
+    <Content Include="Style\icons\cut.png" />
+    <Content Include="Style\icons\edit_add.gif" />
+    <Content Include="Style\icons\edit_add.png" />
+    <Content Include="Style\icons\edit_remove.gif" />
+    <Content Include="Style\icons\edit_remove.png" />
+    <Content Include="Style\icons\filesave.gif" />
+    <Content Include="Style\icons\filesave.png" />
+    <Content Include="Style\icons\folder.gif" />
+    <Content Include="Style\icons\folder.png" />
+    <Content Include="Style\icons\group.gif" />
+    <Content Include="Style\icons\group.png" />
+    <Content Include="Style\icons\help.gif" />
+    <Content Include="Style\icons\help.png" />
+    <Content Include="Style\icons\li.gif" />
+    <Content Include="Style\icons\li.png" />
+    <Content Include="Style\icons\module.gif" />
+    <Content Include="Style\icons\module.png" />
+    <Content Include="Style\icons\no.gif" />
+    <Content Include="Style\icons\no.png" />
+    <Content Include="Style\icons\ok.gif" />
+    <Content Include="Style\icons\ok.png" />
+    <Content Include="Style\icons\page.gif" />
+    <Content Include="Style\icons\page.png" />
+    <Content Include="Style\icons\pencil.gif" />
+    <Content Include="Style\icons\pencil.png" />
+    <Content Include="Style\icons\print.gif" />
+    <Content Include="Style\icons\print.png" />
+    <Content Include="Style\icons\redo.gif" />
+    <Content Include="Style\icons\redo.png" />
+    <Content Include="Style\icons\reload.gif" />
+    <Content Include="Style\icons\reload.png" />
+    <Content Include="Style\icons\search.gif" />
+    <Content Include="Style\icons\search.png" />
+    <Content Include="Style\icons\tree_file1.gif" />
+    <Content Include="Style\icons\tree_folder_open.gif" />
+    <Content Include="Style\icons\undo.gif" />
+    <Content Include="Style\icons\undo.png" />
+    <Content Include="Style\icons\unset.gif" />
+    <Content Include="Style\icons\unset.png" />
+    <Content Include="Style\Images\43.png" />
+    <Content Include="Style\Images\44.png" />
+    <Content Include="Style\Images\attchment.png" />
+    <Content Include="Style\Images\bg-login-top.png" />
+    <Content Include="Style\Images\bg-login.png" />
+    <Content Include="Style\Images\btn_bk.jpg" />
+    <Content Include="Style\Images\Button\add.jpg" />
+    <Content Include="Style\Images\Button\add_H.jpg" />
+    <Content Include="Style\Images\Button\copy.jpg" />
+    <Content Include="Style\Images\Button\copy_H.jpg" />
+    <Content Include="Style\Images\Button\delete.jpg" />
+    <Content Include="Style\Images\Button\delete_H.jpg" />
+    <Content Include="Style\Images\Button\hd.png" />
+    <Content Include="Style\Images\Button\layout_button_down.gif" />
+    <Content Include="Style\Images\Button\layout_button_up.gif" />
+    <Content Include="Style\Images\Button\move.jpg" />
+    <Content Include="Style\Images\Button\move_H.jpg" />
+    <Content Include="Style\Images\Button\refresh.jpg" />
+    <Content Include="Style\Images\Button\refresh_H.jpg" />
+    <Content Include="Style\Images\Button\to_down.jpg" />
+    <Content Include="Style\Images\Button\to_down_H.jpg" />
+    <Content Include="Style\Images\Button\to_up.jpg" />
+    <Content Include="Style\Images\Button\to_up_H.jpg" />
+    <Content Include="Style\Images\Button\update.jpg" />
+    <Content Include="Style\Images\Button\update_H.jpg" />
+    <Content Include="Style\Images\Default\bottom.png" />
+    <Content Include="Style\Images\Default\bottom_bk.jpg" />
+    <Content Include="Style\Images\Default\Btnbck.jpg" />
+    <Content Include="Style\Images\Default\Btnbck_line.jpg" />
+    <Content Include="Style\Images\Default\divItemBk.jpg" />
+    <Content Include="Style\Images\Default\divItemLeft.jpg" />
+    <Content Include="Style\Images\Default\dt_left_title_0.jpg" />
+    <Content Include="Style\Images\Default\help.jpg" />
+    <Content Include="Style\Images\Default\home_bottom_center.jpg" />
+    <Content Include="Style\Images\Default\home_bottom_left.jpg" />
+    <Content Include="Style\Images\Default\home_bottom_right.jpg" />
+    <Content Include="Style\Images\Default\home_img_right_dot.gif" />
+    <Content Include="Style\Images\Default\home_middle_left.jpg" />
+    <Content Include="Style\Images\Default\home_middle_right.jpg" />
+    <Content Include="Style\Images\Default\home_rc_rl.jpg" />
+    <Content Include="Style\Images\Default\home_right_rc_bk.jpg" />
+    <Content Include="Style\Images\Default\home_right_rc_bk_bottom.jpg" />
+    <Content Include="Style\Images\Default\home_right_rc_bk_center.jpg" />
+    <Content Include="Style\Images\Default\home_right_rc_bk_left.jpg" />
+    <Content Include="Style\Images\Default\home_right_rc_bk_left_bottom.jpg" />
+    <Content Include="Style\Images\Default\home_right_rc_bk_left_center.jpg" />
+    <Content Include="Style\Images\Default\home_right_rc_bk_left_top.jpg" />
+    <Content Include="Style\Images\Default\home_right_rc_bk_right.jpg" />
+    <Content Include="Style\Images\Default\home_right_rc_bk_right_bottom.jpg" />
+    <Content Include="Style\Images\Default\home_right_rc_bk_right_center.jpg" />
+    <Content Include="Style\Images\Default\home_right_rc_bk_right_top.jpg" />
+    <Content Include="Style\Images\Default\home_right_rc_bk_top.jpg" />
+    <Content Include="Style\Images\Default\home_top_center.jpg" />
+    <Content Include="Style\Images\Default\home_top_left.jpg" />
+    <Content Include="Style\Images\Default\home_top_right.jpg" />
+    <Content Include="Style\Images\Default\img_right_2.jpg" />
+    <Content Include="Style\Images\Default\img_right_3.jpg" />
+    <Content Include="Style\Images\Default\img_right_4.jpg" />
+    <Content Include="Style\Images\Default\img_rigth_1.jpg" />
+    <Content Include="Style\Images\Default\itemIco.png" />
+    <Content Include="Style\Images\Default\Item\1.gif" />
+    <Content Include="Style\Images\Default\Item\1.png" />
+    <Content Include="Style\Images\Default\Item\10.gif" />
+    <Content Include="Style\Images\Default\Item\10.png" />
+    <Content Include="Style\Images\Default\Item\2.gif" />
+    <Content Include="Style\Images\Default\Item\2.png" />
+    <Content Include="Style\Images\Default\Item\3.gif" />
+    <Content Include="Style\Images\Default\Item\3.png" />
+    <Content Include="Style\Images\Default\Item\4.gif" />
+    <Content Include="Style\Images\Default\Item\4.png" />
+    <Content Include="Style\Images\Default\Item\5.gif" />
+    <Content Include="Style\Images\Default\Item\5.png" />
+    <Content Include="Style\Images\Default\Item\6.gif" />
+    <Content Include="Style\Images\Default\Item\6.png" />
+    <Content Include="Style\Images\Default\Item\7.gif" />
+    <Content Include="Style\Images\Default\Item\7.png" />
+    <Content Include="Style\Images\Default\Item\8.gif" />
+    <Content Include="Style\Images\Default\Item\8.png" />
+    <Content Include="Style\Images\Default\Item\9.gif" />
+    <Content Include="Style\Images\Default\Item\9.png" />
+    <Content Include="Style\Images\Default\Item\t1.gif" />
+    <Content Include="Style\Images\Default\Item\t1.png" />
+    <Content Include="Style\Images\Default\Item\t2.gif" />
+    <Content Include="Style\Images\Default\Item\t2.png" />
+    <Content Include="Style\Images\Default\Item\t3.gif" />
+    <Content Include="Style\Images\Default\Item\t3.png" />
+    <Content Include="Style\Images\Default\Item\t4.gif" />
+    <Content Include="Style\Images\Default\Item\t4.png" />
+    <Content Include="Style\Images\Default\Item_bk.jpg" />
+    <Content Include="Style\Images\Default\item_dot.gif" />
+    <Content Include="Style\Images\Default\item_dot.png" />
+    <Content Include="Style\Images\Default\item_left.jpg" />
+    <Content Include="Style\Images\Default\item_left_dot.gif" />
+    <Content Include="Style\Images\Default\item_right.jpg" />
+    <Content Include="Style\Images\Default\item_title_1.png" />
+    <Content Include="Style\Images\Default\left_bottom_bk.jpg" />
+    <Content Include="Style\Images\Default\left_item.png" />
+    <Content Include="Style\Images\Default\left_item_bk.jpg" />
+    <Content Include="Style\Images\Default\left_item_bk_select.jpg" />
+    <Content Include="Style\Images\Default\login_user.gif" />
+    <Content Include="Style\Images\Default\login_user.png" />
+    <Content Include="Style\Images\Default\Menu1.jpg" />
+    <Content Include="Style\Images\Default\Menu2.jpg" />
+    <Content Include="Style\Images\Default\Menu2_bk.jpg" />
+    <Content Include="Style\Images\Default\Menu2_dot.gif" />
+    <Content Include="Style\Images\Default\Menu2_dot.jpg" />
+    <Content Include="Style\Images\Default\Menu3_bk.jpg" />
+    <Content Include="Style\Images\Default\Menu3_dot.jpg" />
+    <Content Include="Style\Images\Default\Menu_bk.jpg" />
+    <Content Include="Style\Images\Default\Menu_level1_bak.jpg" />
+    <Content Include="Style\Images\Default\Menu_level2_bak.jpg" />
+    <Content Include="Style\Images\Default\Notice.jpg" />
+    <Content Include="Style\Images\Default\page_navigation.gif" />
+    <Content Include="Style\Images\Default\page_navigation.jpg" />
+    <Content Include="Style\Images\Default\page_navigation.png" />
+    <Content Include="Style\Images\Default\page_navigation_back.jpg" />
+    <Content Include="Style\Images\Default\pixel.gif" />
+    <Content Include="Style\Images\Default\title.jpg" />
+    <Content Include="Style\Images\Default\title_bk.jpg" />
+    <Content Include="Style\Images\Default\TopLine.jpg" />
+    <Content Include="Style\Images\Default\TopMenu_bk.jpg" />
+    <Content Include="Style\Images\Default\top_02.jpg" />
+    <Content Include="Style\Images\Default\top_03.jpg" />
+    <Content Include="Style\Images\Default\top_05.jpg" />
+    <Content Include="Style\Images\Default\top_06.jpg" />
+    <Content Include="Style\Images\Default\top_08.jpg" />
+    <Content Include="Style\Images\Default\top_1.jpg" />
+    <Content Include="Style\Images\Default\top_back_0.jpg" />
+    <Content Include="Style\Images\Default\top_back_01.jpg" />
+    <Content Include="Style\Images\Default\top_back_0_SFJ.jpg" />
+    <Content Include="Style\Images\Default\top_back_1.jpg" />
+    <Content Include="Style\Images\Default\top_bk.jpg" />
+    <Content Include="Style\Images\Default\Top_Close.jpg" />
+    <Content Include="Style\Images\Default\Top_Lock.jpg" />
+    <Content Include="Style\Images\Default\Top_log.gif" />
+    <Content Include="Style\Images\Default\top_message_bk.jpg" />
+    <Content Include="Style\Images\Default\top_pp.jpg" />
+    <Content Include="Style\Images\Default\top_pp1.jpg" />
+    <Content Include="Style\Images\Default\Top_Title.jpg" />
+    <Content Include="Style\Images\Default\Top_Title_SFJ.jpg" />
+    <Content Include="Style\Images\Default\Top_Title_SFJ1.jpg" />
+    <Content Include="Style\Images\Default\top_wf_bk.jpg" />
+    <Content Include="Style\Images\downLoad.png" />
+    <Content Include="Style\Images\go-top-green.png" />
+    <Content Include="Style\Images\isRead.png" />
+    <Content Include="Style\Images\List\list_title_bk.jpg" />
+    <Content Include="Style\Images\List\Meun_2.jpg" />
+    <Content Include="Style\Images\List\Muen2.jpg" />
+    <Content Include="Style\Images\List\titlebackground.jpg" />
+    <Content Include="Style\Images\Login.jpg" />
+    <Content Include="Style\Images\Login\login_01.jpg" />
+    <Content Include="Style\Images\Login\login_02.gif" />
+    <Content Include="Style\Images\Login\login_03.gif" />
+    <Content Include="Style\Images\Login\login_04.jpg" />
+    <Content Include="Style\Images\Login\login_05.gif" />
+    <Content Include="Style\Images\Login\login_06.gif" />
+    <Content Include="Style\Images\Login\login_07.gif" />
+    <Content Include="Style\Images\Login\login_08.gif" />
+    <Content Include="Style\Images\Login\login_09.gif" />
+    <Content Include="Style\Images\Login\login_10.gif" />
+    <Content Include="Style\Images\Login\login_11.gif" />
+    <Content Include="Style\Images\Login\login_12.gif" />
+    <Content Include="Style\Images\Login\login_13.gif" />
+    <Content Include="Style\Images\Login\login_14.gif" />
+    <Content Include="Style\Images\Login\login_15.gif" />
+    <Content Include="Style\Images\Login\login_16.gif" />
+    <Content Include="Style\Images\Login\sp.gif" />
+    <Content Include="Style\Images\nopic.jpg" />
+    <Content Include="Style\Images\NoRead.png" />
+    <Content Include="Style\Images\SendMessage.jpg" />
+    <Content Include="Style\Images\WorkFlow\btn_bgssh.gif" />
+    <Content Include="Style\Images\WorkFlow\btn_close.gif" />
+    <Content Include="Style\Images\WorkFlow\btn_cshq.gif" />
+    <Content Include="Style\Images\WorkFlow\btn_czsh.gif" />
+    <Content Include="Style\Images\WorkFlow\btn_delect.gif" />
+    <Content Include="Style\Images\WorkFlow\btn_goback.gif" />
+    <Content Include="Style\Images\WorkFlow\btn_save.gif" />
+    <Content Include="Style\Images\WorkFlow\btn_shoucang.gif" />
+    <Content Include="Style\Images\WorkFlow\btn_sumbit.gif" />
+    <Content Include="Style\Images\WorkFlow\btn_sw1.gif" />
+    <Content Include="Style\Images\WorkFlow\btn_swH.gif" />
+    <Content Include="Style\Images\WorkFlow\cardtitlecurr_bg.gif" />
+    <Content Include="Style\Images\WorkFlow\cardtitlec_bg.gif" />
+    <Content Include="Style\Images\WorkFlow\cardtitle_bg.gif" />
+    <Content Include="Style\Images\WorkFlow\sw_top_bg.gif" />
+    <Content Include="Style\Images\WorkFlow\WFEnd.gif" />
+    <Content Include="Style\Images\WorkFlow\WFLine.gif" />
+    <Content Include="Style\Images\WorkFlow\WFMSG_LB.gif" />
+    <Content Include="Style\Images\WorkFlow\WFMSG_LT.gif" />
+    <Content Include="Style\Images\WorkFlow\WFMSG_RB.gif" />
+    <Content Include="Style\Images\WorkFlow\WFMSG_RT.gif" />
+    <Content Include="Style\Images\WorkFlow\WFNextLine.gif" />
+    <Content Include="Style\Images\WorkFlow\WFStart.gif" />
+    <Content Include="Style\login.css" />
+    <Content Include="Style\PageDefault.css" />
+    <Content Include="Style\PageNavigation.css" />
+    <Content Include="Style\Style.css" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AppCode\PageBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\HardwareControl\DashBoardList.aspx.cs">
+      <DependentUpon>DashBoardList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\HardwareControl\DashBoardList.aspx.designer.cs">
+      <DependentUpon>DashBoardList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\HardwareControl\LoggerTrackChart1.aspx.cs">
+      <DependentUpon>LoggerTrackChart1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\HardwareControl\LoggerTrackChart1.aspx.designer.cs">
+      <DependentUpon>LoggerTrackChart1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\HardwareControl\LoggerTrackDashBoard.aspx.cs">
+      <DependentUpon>LoggerTrackDashBoard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\HardwareControl\LoggerTrackDashBoard.aspx.designer.cs">
+      <DependentUpon>LoggerTrackDashBoard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\HardwareControl\LoggerTrackTabs.aspx.cs">
+      <DependentUpon>LoggerTrackTabs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\HardwareControl\LoggerTrackTabs.aspx.designer.cs">
+      <DependentUpon>LoggerTrackTabs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\HardwareControl\LoggerTrackList.aspx.cs">
+      <DependentUpon>LoggerTrackList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\HardwareControl\LoggerTrackList.aspx.designer.cs">
+      <DependentUpon>LoggerTrackList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\HardwareControl\OperationHandler.aspx.cs">
+      <DependentUpon>OperationHandler.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\HardwareControl\OperationHandler.aspx.designer.cs">
+      <DependentUpon>OperationHandler.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\HardwareControl\LoggerTrackSetup.aspx.cs">
+      <DependentUpon>LoggerTrackSetup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\HardwareControl\LoggerTrackSetup.aspx.designer.cs">
+      <DependentUpon>LoggerTrackSetup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\HardwareControl\LoggerTrackChart2.aspx.cs">
+      <DependentUpon>LoggerTrackChart2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\HardwareControl\LoggerTrackChart2.aspx.designer.cs">
+      <DependentUpon>LoggerTrackChart2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Projects\PourEditTabs.aspx.cs">
+      <DependentUpon>PourEditTabs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\Projects\PourEditTabs.aspx.designer.cs">
+      <DependentUpon>PourEditTabs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Projects\ProductAdd.aspx.cs">
+      <DependentUpon>ProductAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\Projects\ProductAdd.aspx.designer.cs">
+      <DependentUpon>ProductAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Projects\ProductList.aspx.cs">
+      <DependentUpon>ProductList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\Projects\ProductList.aspx.designer.cs">
+      <DependentUpon>ProductList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Projects\ProductEdit.aspx.cs">
+      <DependentUpon>ProductEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\Projects\ProductEdit.aspx.designer.cs">
+      <DependentUpon>ProductEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Projects\OperationHandler.aspx.cs">
+      <DependentUpon>OperationHandler.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\Projects\OperationHandler.aspx.designer.cs">
+      <DependentUpon>OperationHandler.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Projects\LoggerList.aspx.cs">
+      <DependentUpon>LoggerList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\Projects\LoggerList.aspx.designer.cs">
+      <DependentUpon>LoggerList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Projects\LoggerAdd.aspx.cs">
+      <DependentUpon>LoggerAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\Projects\LoggerAdd.aspx.designer.cs">
+      <DependentUpon>LoggerAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Projects\LoggerEdit.aspx.cs">
+      <DependentUpon>LoggerEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\Projects\LoggerEdit.aspx.designer.cs">
+      <DependentUpon>LoggerEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Projects\ProjectAdd.aspx.cs">
+      <DependentUpon>ProjectAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\Projects\ProjectAdd.aspx.designer.cs">
+      <DependentUpon>ProjectAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Projects\ProjectEdit.aspx.cs">
+      <DependentUpon>ProjectEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\Projects\ProjectEdit.aspx.designer.cs">
+      <DependentUpon>ProjectEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Projects\ProjectList.aspx.cs">
+      <DependentUpon>ProjectList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\Projects\ProjectList.aspx.designer.cs">
+      <DependentUpon>ProjectList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Projects\PourAdd.aspx.cs">
+      <DependentUpon>PourAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\Projects\PourAdd.aspx.designer.cs">
+      <DependentUpon>PourAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Projects\PourList.aspx.cs">
+      <DependentUpon>PourList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\Projects\PourList.aspx.designer.cs">
+      <DependentUpon>PourList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Projects\Project2LoggerList.aspx.cs">
+      <DependentUpon>Project2LoggerList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\Projects\Project2LoggerList.aspx.designer.cs">
+      <DependentUpon>Project2LoggerList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Projects\Project2LoggerAdd.aspx.cs">
+      <DependentUpon>Project2LoggerAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\Projects\Project2LoggerAdd.aspx.designer.cs">
+      <DependentUpon>Project2LoggerAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Projects\PourEdit.aspx.cs">
+      <DependentUpon>PourEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\Projects\PourEdit.aspx.designer.cs">
+      <DependentUpon>PourEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Projects\ContactList.aspx.cs">
+      <DependentUpon>ContactList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\Projects\ContactList.aspx.designer.cs">
+      <DependentUpon>ContactList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Projects\ContactEdit.aspx.cs">
+      <DependentUpon>ContactEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\Projects\ContactEdit.aspx.designer.cs">
+      <DependentUpon>ContactEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Projects\ContactAdd.aspx.cs">
+      <DependentUpon>ContactAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\Projects\ContactAdd.aspx.designer.cs">
+      <DependentUpon>ContactAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Projects\DefaultTargetList.aspx.cs">
+      <DependentUpon>DefaultTargetList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\Projects\DefaultTargetList.aspx.designer.cs">
+      <DependentUpon>DefaultTargetList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Projects\DefaultTargetEdit.aspx.cs">
+      <DependentUpon>DefaultTargetEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\Projects\DefaultTargetEdit.aspx.designer.cs">
+      <DependentUpon>DefaultTargetEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Projects\DefaultTargetAdd.aspx.cs">
+      <DependentUpon>DefaultTargetAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\Projects\DefaultTargetAdd.aspx.designer.cs">
+      <DependentUpon>DefaultTargetAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Projects\LevelList.aspx.cs">
+      <DependentUpon>LevelList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\Projects\LevelList.aspx.designer.cs">
+      <DependentUpon>LevelList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Projects\LevelAdd.aspx.cs">
+      <DependentUpon>LevelAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\Projects\LevelAdd.aspx.designer.cs">
+      <DependentUpon>LevelAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Projects\LevelEdit.aspx.cs">
+      <DependentUpon>LevelEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\Projects\LevelEdit.aspx.designer.cs">
+      <DependentUpon>LevelEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Projects\Pour2LevelList.aspx.cs">
+      <DependentUpon>Pour2LevelList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\Projects\Pour2LevelList.aspx.designer.cs">
+      <DependentUpon>Pour2LevelList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Projects\Pour2LevelAdd.aspx.cs">
+      <DependentUpon>Pour2LevelAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\Projects\Pour2LevelAdd.aspx.designer.cs">
+      <DependentUpon>Pour2LevelAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Projects\Pour2TargetList.aspx.cs">
+      <DependentUpon>Pour2TargetList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\Projects\Pour2TargetList.aspx.designer.cs">
+      <DependentUpon>Pour2TargetList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Projects\Pour2TargetAdd.aspx.cs">
+      <DependentUpon>Pour2TargetAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\Projects\Pour2TargetAdd.aspx.designer.cs">
+      <DependentUpon>Pour2TargetAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Projects\Pour2TargetEdit.aspx.cs">
+      <DependentUpon>Pour2TargetEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\Projects\Pour2TargetEdit.aspx.designer.cs">
+      <DependentUpon>Pour2TargetEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Projects\Pour2LocationList.aspx.cs">
+      <DependentUpon>Pour2LocationList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\Projects\Pour2LocationList.aspx.designer.cs">
+      <DependentUpon>Pour2LocationList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Projects\Pour2LocationAdd.aspx.cs">
+      <DependentUpon>Pour2LocationAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\Projects\Pour2LocationAdd.aspx.designer.cs">
+      <DependentUpon>Pour2LocationAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Projects\Pour2LocationTargetList.aspx.cs">
+      <DependentUpon>Pour2LocationTargetList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\Projects\Pour2LocationTargetList.aspx.designer.cs">
+      <DependentUpon>Pour2LocationTargetList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Projects\Pour2LocationTargetEdit.aspx.cs">
+      <DependentUpon>Pour2LocationTargetEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\Projects\Pour2LocationTargetEdit.aspx.designer.cs">
+      <DependentUpon>Pour2LocationTargetEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Projects\Pour2LocationEdit.aspx.cs">
+      <DependentUpon>Pour2LocationEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\Projects\Pour2LocationEdit.aspx.designer.cs">
+      <DependentUpon>Pour2LocationEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Projects\LoggerTempList.aspx.cs">
+      <DependentUpon>LoggerTempList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\Projects\LoggerTempList.aspx.designer.cs">
+      <DependentUpon>LoggerTempList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Projects\CompanyList.aspx.cs">
+      <DependentUpon>CompanyList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\Projects\CompanyList.aspx.designer.cs">
+      <DependentUpon>CompanyList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="JavaScript\upload\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ConXEdge.BLL\ConXEdge.BLL.csproj">
+      <Project>{C0270A49-1E91-4024-B348-F84584A9BD86}</Project>
+      <Name>ConXEdge.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ConXedge.Model\ConXedge.Model.csproj">
+      <Project>{26D23D66-2D52-4C57-901F-8077945A86A2}</Project>
+      <Name>ConXedge.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ConXEdge.Nhibernate\ConXEdge.Nhibernate.csproj">
+      <Project>{37ECDA21-2332-4F3E-8E06-DB543795D7A8}</Project>
+      <Name>ConXEdge.Nhibernate</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ConXEdge.PagerBar\ConXEdge.PagerBar.csproj">
+      <Project>{EE826E93-BF0D-40C5-9E2C-58E722EFDF12}</Project>
+      <Name>ConXEdge.PagerBar</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>30214</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

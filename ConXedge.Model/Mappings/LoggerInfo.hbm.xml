@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  <class name="ConXedge.Model.LoggerInfo,ConXedge.Model" table="LoggerInfo" lazy="false">
+    <id name="Loggerid" column="LoggerID" type="string">
+      <generator class="assigned" />
+    </id>
+    <property type="string" not-null="true" length="50" name="Companyid" column="[CompanyID]" />
+    <property type="string" not-null="true" length="50" name="SerialNumber" column="[SerialNumber]" />
+    <property type="string" not-null="true" length="50" name="LoggerCode" column="[LoggerCode]" />
+    <property type="string" length="50" name="CurrentPourid" column="[CurrentPourID]" />
+    <property type="Decimal" name="DataPointid" column="[DataPointID]" />
+    <property type="Decimal" name="Eventid" column="[EventID]" />
+  </class>
+</hibernate-mapping>

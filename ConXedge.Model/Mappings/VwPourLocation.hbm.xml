@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  <class name="ConXedge.Model.VwPourLocation,ConXedge.Model" table="vwPourLocation" lazy="false" mutable="false">
+    <id name="_id" access="field" column="ID" type="string">
+      <generator class="assigned" />
+    </id>
+    <property type="string" access="field" not-null="true" length="50" name="_pourid" column="[PourID]" />
+    <property type="string" access="field" not-null="true" length="50" name="_locationid" column="[LocationID]" />
+    <property type="string" access="field" not-null="true" length="50" name="_locationdescription" column="[LocationDescription]" />
+    <property type="string" access="field" length="50" name="_details" column="[Details]" />
+    <property type="string" access="field" not-null="true" length="50" name="_loggerid" column="[LoggerID]" />
+    <property type="int" access="field" not-null="true" name="_channelno" column="[ChannelNo]" />
+    <property type="string" access="field" not-null="true" length="1" name="_monitortype" column="[MonitorType]" />
+    <property type="DateTime" access="field" name="_logginstart" column="[LogginStart]" />
+    <property type="string" access="field" length="50" name="_loggercode" column="[LoggerCode]" />
+    <property type="string" access="field" length="50" name="_companyid" column="[CompanyID]" />
+    <property type="string" access="field" length="1" name="_status" column="[Status]" />
+    <property type="string" access="field" length="50" name="_pourname" column="[PourName]" />
+  </class>
+</hibernate-mapping>

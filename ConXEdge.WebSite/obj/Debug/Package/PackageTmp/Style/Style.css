@@ -1,0 +1,199 @@
+﻿body 
+{
+    font:12px;
+    font-family:宋体;
+    margin:0px;
+}
+.default_top
+{
+    margin:1,1,0,1;
+    height: 67px;
+    background-image: url("Images/Default/title_bk.jpg");
+}
+.default_top_bk
+{
+    height: 67px;
+    background: url("Images/Default/title.jpg") repeat-y;
+}
+.default_top_content
+{
+    font-size: 26px;
+    vertical-align: middle;
+    margin-left: 5px;
+    margin-top: 14px;
+    font-weight:bold;
+    color:White;
+}
+.default_menu
+{
+    margin:0,1,0,1;
+    background-color:#3289CA;
+    height:26px;
+}
+.default_menu_content
+{
+    margin-top:5px;
+    color:White;
+}
+
+.default_bottom
+{
+    margin:0,1,1,1;
+    height:28px;
+    background-color:#1094d4;
+}
+.default_bottom_bk
+{
+    height:28px; 
+}
+.default_bottom_content
+{
+    height:20px;
+    margin-top: 8px;
+    text-align:center;
+    color:White;   
+}
+.Defaut_Content
+{
+    margin:0,1,0,1;
+}
+.List_Page_Meun_Top_Td
+{
+    width:232px;
+    height:33px;
+    background-image:url("Images/List/Muen2.jpg")
+}
+.List_Page_Meun_Top_Word
+{
+    position:relative;
+    top:4px;
+    left:18px;
+    font-size:16px;
+    font-weight:bold;
+    color:White;
+}
+.List_Page_Meun_Item
+{
+    width:230px;
+    height:31px;
+    background-image:url("Images/List/Meun_2.jpg")
+}
+.List_Page_Meun_Item_Content
+{   
+    margin-top:8px;
+    margin-left:28px;
+    font-size:14px;
+    color:White;
+    margin-bottom:1px;
+}
+.list_page_title_bk
+{
+    margin:0,0,0,2px;
+    height: 32px;
+    border:1px solid #2398dd;
+    background-image: url("Images/List/list_title_bk.jpg");
+    vertical-align:middle;
+}
+.list_page_Meun_left
+{
+    border:1px solid #2398dd;
+    background-color:#d8edfe; 
+    width:232px;
+    vertical-align:top;
+}
+.list_page_Meun_left_div
+{
+    overflow-y:auto;
+    overflow-x:hidden;    
+}
+.list_page_right_content
+{
+    vertical-align:top;
+    border:1px solid #2398dd;
+    text-align:left;
+}
+
+/*列表样式*/
+.tableList
+{
+    background-image: url("images/list/titlebackground.jpg");
+    background-repeat: repeat-x;
+    width: 100%;
+    height: 23px;
+    border-collapse:collapse;
+    text-align:center;
+}
+.NewtableList
+{
+    background-color:#00CCFF;
+    background-repeat: repeat-x;
+    width: 100%;
+    height: 100%;
+    border-collapse:collapse;
+}
+.NewtableList td
+{   
+    border: 1px solid #a5b6d2;
+    height:25px;
+}
+.tableList td
+{   
+    border: 1px solid #a5b6d2;
+    height:20px;
+}
+/*编辑页面样式*/
+.table_edit
+{ 
+    width: 100%;
+    height: 23px;
+    border-collapse:collapse;
+    text-align:center;
+}
+.table_edit td
+{
+     text-align:left;
+    border: 1px solid #a5b6d2;
+    height:25px;
+}
+.td_title
+{
+    border: 1px solid #a5b6d2;
+    height:25px;
+    width:120px;
+    background-color:#90DCFC;
+}
+
+/*按钮*/
+.btn
+{
+    background-image: url("images/btn_bk.jpg");
+    background-repeat: repeat-x;    
+    width: 82px;
+    height: 29px;
+    margin:0px;
+    border:0px;    
+    vertical-align:middle;
+}
+.div_btn
+{
+    padding:1px;    
+    height:33px;
+    border: 1px solid #a5b6d2;    
+}
+.div_condition
+{
+    padding:1px;    
+    height:33px;
+    border: 1px solid #a5b6d2;    
+}
+.txt
+{
+    border: 1px solid #a5b6d2;    
+}
+
+.div_paging
+{
+    padding:2px;
+    color:Green;
+    height:28px;  
+}

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  <class name="ConXedge.Model.UserInfo,ConXedge.Model" table="UserInfo" lazy="false">
+    <id name="Userid" column="UserID" type="string">
+      <generator class="assigned" />
+    </id>
+    <property type="string" not-null="true" length="50" name="Companyid" column="[CompanyID]" />
+    <property type="string" not-null="true" length="50" name="UserName" column="[UserName]" />
+    <property type="string" not-null="true" length="50" name="Password" column="[Password]" />
+    <property type="string" not-null="true" length="50" name="UserType" column="[UserType]" />
+    <property type="string" length="50" name="EmailAddress" column="[EmailAddress]" />
+    <property type="string" length="50" name="FirstName" column="[FirstName]" />
+    <property type="string" length="50" name="LastName" column="[LastName]" />
+    <property type="string" length="50" name="JobTitle" column="[JobTitle]" />
+    <property type="string" length="50" name="Mobile" column="[Mobile]" />
+    <property type="string" length="50" name="Phone" column="[Phone]" />
+    <property type="string" length="50" name="Fax" column="[Fax]" />
+  </class>
+</hibernate-mapping>

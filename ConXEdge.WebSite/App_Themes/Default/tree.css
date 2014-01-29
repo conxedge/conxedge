@@ -1,0 +1,134 @@
+﻿
+div #treeDiv
+{
+	float: left;
+	background: #FFF;
+	background-color: #C3DDE9;
+}
+.tree_option
+{
+	padding-top:4px;
+	height:25px; 
+	width:100%;
+	min-width:200px;
+	background-color:#C7E7F4; 
+	border-bottom:solid 1px #0071b8;
+}
+
+.button_tree
+{
+	margin-left:4px;
+	border: 0px;
+	cursor: hand;
+	font-style: normal;
+	width: 17px;
+}
+.button_add
+{
+	background: url(images/Button/add.jpg);height:17px; width:17px;
+}
+
+.button_add_gray
+{
+	background: url(images/Button/add_H.jpg);height:17px; width:17px;
+}
+.button_addfile
+{
+	background: url(images/Button/addfile.jpg);height:17px; width:17px;
+}
+.button_addfile_gray
+{
+	background: url(images/Button/addfile_H.jpg);height:17px; width:17px;
+}
+
+.button_update
+{
+	background: url(images/Button/update.jpg);height:17px; width:17px;
+}
+
+.button_update_gray
+{
+	background: url(images/Button/update_H.jpg);height:17px; width:17px;
+}
+
+.button_delete
+{
+	background: url(images/Button/delete.jpg);height:17px; width:17px;
+}
+
+.button_delete_gray
+{
+	background: url(images/Button/delete_H.jpg);height:17px; width:17px;
+}
+
+.button_moveUp_gray
+{
+	background: url(images/Button/to_up_H.jpg);height:17px; width:17px;
+}
+.button_moveUp
+{
+	background: url(images/Button/to_up.jpg);height:17px; width:17px;
+}
+.button_moveDown
+{
+	background: url(images/Button/to_down.jpg);height:17px; width:17px;
+}
+.button_moveDown_gray
+{
+	background: url(images/Button/to_down_H.jpg);height:17px; width:17px;
+}
+
+
+.tbl_list
+{
+    width: 100%;
+    background: #939497;
+    margin: 0 auto;
+    border: 1px thin #93c7d5;
+}
+.tbl_list thead tr td
+{
+    background: url(../resources/imgs/list_t_head.jpg) repeat-x 0 0;
+    height: 21px;
+    text-align: center;
+    font-weight: bold;
+}
+.tbl_list tbody tr td
+{
+    background: #d4d7dd;
+    background-color:#FFFFFF;
+    height: 25px;
+}
+.tbl_list tbody tr td a:link, .tbl_list tbody tr td a:visited
+{
+    text-decoration: none;
+}
+.tbl_list tbody tr td a:hover
+{
+    text-decoration: underline;
+}
+.td_align_center
+{
+    text-align: center;
+}
+.ztree
+{
+    background-color: #fff;
+}
+
+.page_search{padding-top:5px;height:30px;}
+.btnoperate
+{
+    border:none;
+    background-image:url('../resources/imgs/button.gif');
+    background-repeat:no-repeat;
+    background-position:left top;
+    height:24px;
+    line-height:24px;
+    width:63px;
+    float:left;
+    margin-left:5px;
+    text-align:center;
+    cursor:pointer;
+}
+   

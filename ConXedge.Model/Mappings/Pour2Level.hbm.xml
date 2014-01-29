@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  <class name="ConXedge.Model.Pour2Level,ConXedge.Model" table="Pour2Level" lazy="false">
+    <id name="Id" column="ID" type="string">
+      <generator class="assigned" />
+    </id>
+    <property type="string" not-null="true" length="50" name="Pourid" column="[PourID]" />
+    <property type="string" length="50" name="Levelid" column="[LevelID]" />
+  </class>
+</hibernate-mapping>

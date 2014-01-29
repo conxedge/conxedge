@@ -1,0 +1,49 @@
+﻿#pagenav
+{
+	padding:10px;
+	text-align:right;
+	
+}
+
+#pagenav a
+{
+	padding:2px 5px 2px 5px;
+	margin-left:5px;
+	text-decoration:none;
+}
+
+#pagenav span
+{
+	line-height: 12px;
+	height: 12px;
+	padding: 5px 3px 3px 3px;
+	margin-left:5px;
+	text-align:center;
+}
+
+#pagenav a.pagenumb
+{
+	min-width:20px;
+	border: solid 1px #BFD0E2;
+	cursor:pointer;
+}
+
+#pagenav a.pagenumb:hover
+{
+	min-width:20px;
+	border: solid 1px #244A94;
+	background-color:#D8DEEC;
+	cursor:pointer;
+	color:#FD9C02;
+}
+
+#pagenav a.pagenumb_now
+{
+	background-color:#EEEEEE;
+	min-width:20px;
+	border: solid 1px #BFD0E2;
+	cursor:pointer;
+	color:Red;
+	font-weight:bold;
+	font-size:13px;
+}

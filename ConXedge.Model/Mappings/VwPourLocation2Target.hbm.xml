@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  <class name="ConXedge.Model.VwPourLocation2Target,ConXedge.Model" table="vwPourLocation2Target" lazy="false" mutable="false">
+    <id name="_id" access="field" column="ID" type="string">
+      <generator class="assigned" />
+    </id>
+    <property type="string" access="field" not-null="true" length="50" name="_pourid" column="[PourID]" />
+    <property type="string" access="field" not-null="true" length="50" name="_pourlocationid" column="[PourLocationID]" />
+    <property type="string" access="field" not-null="true" length="50" name="_pour2targetid" column="[Pour2TargetID]" />
+    <property type="int" access="field" not-null="true" name="_target" column="[Target]" />
+    <property type="string" access="field" length="50" name="_locationid" column="[LocationID]" />
+    <property type="string" access="field" length="50" name="_locationdescription" column="[LocationDescription]" />
+    <property type="string" access="field" length="50" name="_details" column="[Details]" />
+    <property type="string" access="field" length="50" name="_loggerid" column="[LoggerID]" />
+    <property type="int" access="field" name="_channelno" column="[ChannelNo]" />
+    <property type="string" access="field" length="50" name="_loggercode" column="[LoggerCode]" />
+    <property type="string" access="field" length="50" name="_purpose" column="[Purpose]" />
+    <property type="int" access="field" name="_defaulttarget" column="[DefaultTarget]" />
+    <property type="string" access="field" length="50" name="_pourname" column="[PourName]" />
+    <property type="string" access="field" length="50" name="_projectid" column="[ProjectID]" />
+    <property type="string" access="field" length="50" name="_contactid" column="[ContactID]" />
+    <property type="string" access="field" length="50" name="_projectname" column="[ProjectName]" />
+    <property type="string" access="field" length="50" name="_contact" column="[Contact]" />
+    <property type="string" access="field" length="50" name="_email" column="[Email]" />
+    <property type="string" access="field" length="1" name="_monitortype" column="[MonitorType]" />
+    <property type="DateTime" access="field" name="_logginstart" column="[LogginStart]" />
+    <property type="string" access="field" length="50" name="_companyid" column="[CompanyID]" />
+  </class>
+</hibernate-mapping>

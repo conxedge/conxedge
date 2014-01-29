@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{26D23D66-2D52-4C57-901F-8077945A86A2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ConXedge.Model</RootNamespace>
+    <AssemblyName>ConXedge.Model</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Antlr3.Runtime">
+      <HintPath>..\Resources\NHibernate\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Iesi.Collections">
+      <HintPath>..\Resources\NHibernate\Iesi.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="LinFu.DynamicProxy">
+      <HintPath>..\Resources\NHibernate\LinFu.DynamicProxy.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate">
+      <HintPath>..\Resources\NHibernate\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate.ByteCode.LinFu">
+      <HintPath>..\Resources\NHibernate\NHibernate.ByteCode.LinFu.dll</HintPath>
+    </Reference>
+    <Reference Include="Nullables">
+      <HintPath>..\Resources\NHibernate\Nullables.dll</HintPath>
+    </Reference>
+    <Reference Include="Nullables.NHibernate">
+      <HintPath>..\Resources\NHibernate\Nullables.NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Entities\Company2Logger.cs" />
+    <Compile Include="Entities\CompanyInfo.cs" />
+    <Compile Include="Entities\ContactInfo.cs" />
+    <Compile Include="Entities\DefaultTarget.cs" />
+    <Compile Include="Entities\EquivalentAgeInfo.cs" />
+    <Compile Include="Entities\LevelInfo.cs" />
+    <Compile Include="Entities\Log.cs" />
+    <Compile Include="Entities\LoggerEvents.cs" />
+    <Compile Include="Entities\LoggerInfo.cs" />
+    <Compile Include="Entities\LoggerTrack.cs" />
+    <Compile Include="Entities\ParamInfo.cs" />
+    <Compile Include="Entities\Pour2Level.cs" />
+    <Compile Include="Entities\Pour2Target.cs" />
+    <Compile Include="Entities\PourInfo.cs" />
+    <Compile Include="Entities\PourLocation.cs" />
+    <Compile Include="Entities\PourLocation2Target.cs" />
+    <Compile Include="Entities\PourLoggerEvents.cs" />
+    <Compile Include="Entities\PourLoggerStatus.cs" />
+    <Compile Include="Entities\PourLoggerTrack.cs" />
+    <Compile Include="Entities\PourTargetEquivalentAge.cs" />
+    <Compile Include="Entities\ProductInfo.cs" />
+    <Compile Include="Entities\Project2Logger.cs" />
+    <Compile Include="Entities\ProjectInfo.cs" />
+    <Compile Include="Entities\UserInfo.cs" />
+    <Compile Include="Entities\VwLoggerInfo.cs" />
+    <Compile Include="Entities\VwLoggerTemp.cs" />
+    <Compile Include="Entities\VwPour2Level.cs" />
+    <Compile Include="Entities\VwPourInfo.cs" />
+    <Compile Include="Entities\VwPourLocation2Target.cs" />
+    <Compile Include="Entities\VwPourTargetEquivalentAge.cs" />
+    <Compile Include="Entities\VwProject2Logger.cs" />
+    <Compile Include="Entities\VwPourLocation.cs" />
+    <Compile Include="Message\Message.cs" />
+    <Compile Include="Pagination\PageInfo.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Protocol\DataPoint.cs" />
+    <Compile Include="Protocol\DataPoints.cs" />
+    <Compile Include="Protocol\Enum.cs" />
+    <Compile Include="Protocol\InputStatus.cs" />
+    <Compile Include="Protocol\LoggerStatus.cs" />
+    <Compile Include="Protocol\SensorStatus.cs" />
+    <Compile Include="Protocol\Events.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Mappings\ContactInfo.hbm.xml" />
+    <EmbeddedResource Include="Mappings\DefaultTarget.hbm.xml" />
+    <EmbeddedResource Include="Mappings\LevelInfo.hbm.xml" />
+    <EmbeddedResource Include="Mappings\LoggerInfo.hbm.xml" />
+    <EmbeddedResource Include="Mappings\LoggerTrack.hbm.xml" />
+    <EmbeddedResource Include="Mappings\ParamInfo.hbm.xml" />
+    <EmbeddedResource Include="Mappings\Pour2Level.hbm.xml" />
+    <EmbeddedResource Include="Mappings\Pour2Target.hbm.xml" />
+    <EmbeddedResource Include="Mappings\PourInfo.hbm.xml" />
+    <EmbeddedResource Include="Mappings\PourLocation.hbm.xml" />
+    <EmbeddedResource Include="Mappings\PourLocation2Target.hbm.xml" />
+    <EmbeddedResource Include="Mappings\ProductInfo.hbm.xml" />
+    <EmbeddedResource Include="Mappings\Project2Logger.hbm.xml" />
+    <EmbeddedResource Include="Mappings\ProjectInfo.hbm.xml" />
+    <EmbeddedResource Include="Mappings\VwPourInfo.hbm.xml" />
+    <EmbeddedResource Include="Mappings\VwProject2Logger.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Mappings\VwPour2Level.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Mappings\VwPourLocation.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Mappings\VwPourLocation2Target.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Mappings\LoggerEvents.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Mappings\PourTargetEquivalentAge.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Mappings\PourLoggerStatus.hbm.xml" />
+    <EmbeddedResource Include="Mappings\PourLoggerTrack.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Mappings\VwPourTargetEquivalentAge.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Mappings\PourLoggerEvents.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Mappings\Company2Logger.hbm.xml" />
+    <EmbeddedResource Include="Mappings\CompanyInfo.hbm.xml" />
+    <EmbeddedResource Include="Mappings\EquivalentAgeInfo.hbm.xml" />
+    <EmbeddedResource Include="Mappings\Log.hbm.xml" />
+    <EmbeddedResource Include="Mappings\UserInfo.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Mappings\VwLoggerTemp.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Mappings\VwLoggerInfo.hbm.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

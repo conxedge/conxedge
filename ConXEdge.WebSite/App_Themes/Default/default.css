@@ -1,0 +1,35 @@
+﻿/*全局*/
+body { font-family: tahoma, "宋体"; background: #FFFFFF; }
+
+.clearfix:after { content:"."; display:block; height: 0; clear: both; visibility: hidden; } /* only ff */
+/*pager.js分页样式*/
+.t1_b{clear:both; border-bottom: 1px solid #c9dae4;  border-top: 0px solid #fff; width:100%; float:left; height:29px; line-height:29px; background-image:url(img/t1_td_bg2.png);}
+.t1_l{ float:left; border-left: 1px solid #c9dae4; padding-left:10px;}
+.t1_r{ float:right; border-right: 1px solid #c9dae4; padding-right:10px; color:#666;}
+
+/* 通用样式 */
+.p_nav
+{
+    /*
+    background-image: url('images/nav.gif');
+    background-repeat: repeat-x;
+    background-position: left top;
+    */
+    background: url('images/ui-bg_glass_85_dfeffc_1x400.png') repeat-x 50% 50%;
+    color: #222222;
+    height: 32px;
+    line-height: 32px;
+    padding-left: 10px;
+    border-bottom: solid 1px #A8C7CE;
+}
+.autocut {  
+    width:200px;  
+    overflow:hidden;  
+    white-space:nowrap;  
+    text-overflow:ellipsis;  
+    -o-text-overflow:ellipsis;  
+    -icab-text-overflow: ellipsis;  
+    -khtml-text-overflow: ellipsis;  
+    -moz-text-overflow: ellipsis;  
+    -webkit-text-overflow: ellipsis;  
+} 

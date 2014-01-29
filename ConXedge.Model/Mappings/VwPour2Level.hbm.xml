@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  <class name="ConXedge.Model.VwPour2Level,ConXedge.Model" table="vwPour2Level" lazy="false" mutable="false">
+    <id name="_id" access="field" column="ID" type="string">
+      <generator class="assigned" />
+    </id>
+    <property type="string" access="field" length="50" name="_levelname" column="[LevelName]" />
+    <property type="string" access="field" not-null="true" length="50" name="_pourid" column="[PourID]" />
+    <property type="string" access="field" length="50" name="_levelid" column="[LevelID]" />
+    <property type="string" access="field" length="50" name="_companyid" column="[CompanyID]" />
+  </class>
+</hibernate-mapping>

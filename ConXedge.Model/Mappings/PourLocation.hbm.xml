@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  <class name="ConXedge.Model.PourLocation,ConXedge.Model" table="PourLocation" lazy="false">
+    <id name="Id" column="ID" type="string">
+      <generator class="assigned" />
+    </id>
+    <property type="string" not-null="true" length="50" name="Pourid" column="[PourID]" />
+    <property type="string" not-null="true" length="50" name="Locationid" column="[LocationID]" />
+    <property type="string" not-null="true" length="50" name="LocationDescription" column="[LocationDescription]" />
+    <property type="string" length="50" name="Details" column="[Details]" />
+    <property type="string" not-null="true" length="50" name="Loggerid" column="[LoggerID]" />
+    <property type="int" not-null="true" name="ChannelNo" column="[ChannelNo]" />
+    <property type="string" not-null="true" length="1" name="MonitorType" column="[MonitorType]" />
+    <property type="DateTime" name="LogginStart" column="[LogginStart]" />
+  </class>
+</hibernate-mapping>

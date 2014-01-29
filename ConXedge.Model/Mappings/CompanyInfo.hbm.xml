@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  <class name="ConXedge.Model.CompanyInfo,ConXedge.Model" table="CompanyInfo" lazy="false">
+    <id name="Companyid" column="CompanyID" type="string">
+      <generator class="assigned" />
+    </id>
+    <property type="string" not-null="true" length="50" name="CompanyName" column="[CompanyName]" />
+    <property type="string" not-null="true" length="2" name="CompanyType" column="[CompanyType]" />
+    <property type="string" not-null="true" length="50" name="Logo" column="[Logo]" />
+    <property type="string" not-null="true" length="2" name="Style" column="[Style]" />
+    <property type="string" length="500" name="Remark" column="[Remark]" />
+  </class>
+</hibernate-mapping>
